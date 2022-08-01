@@ -14,32 +14,45 @@ import Vishaka from "./Vishaka.jpg";
 import Akansha from "./Akansha.jpg";
 import Nisal from "./Nisal.jpg";
 import Tanmay from "./Tanmay.jpg";
+import Bask from "./baskcreativeagency.svg";
 
 import $ from "jquery";
 import axios from "axios";
 
+import Swal from 'sweetalert2' 
+
 Aos.init();
 
 const handleSubmit = (e) => {
+  const Swal = require('sweetalert2')
   e.preventDefault();
   const data = $("#submit_form").serialize();
   console.log("Submitted");
+  console.log(data);
 
   axios
     .post(
-      "https://script.google.com/macros/s/AKfycbyhBxBDYk5CbHa5Xq6IVw6_9zEOtewuw4FiN0cmELlr4r4vNTSfqhpvm7NwMP_QqAn7vg/exec",
+      "https://script.google.com/macros/s/AKfycbyVk1PFsIhusRGGPvZOjzGDeIQofReSwQqyFfG6_SZA2CjQNLK0UdQ5CGQE7SFTQXyB2w/exec",
       data,
       {
-        headers: {
-          Accept: "application/json, text/plain, /",
-          "Content-Type": "multipart/form-data",
-        },
+        
       }
     )
     .then((res) => {
       console.log(res);
       console.log(res.data);
       console.log("Submitted");
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Form submitted successfully',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      setTimeout(() => {
+        window.location.reload();
+      }
+      , 3500);
     })
     .catch((err) => {
       console.log(err);
@@ -60,10 +73,12 @@ const Home = () => {
           data-aos-easing="ease-in-out-cubic"
         >
           <div className="maincontent first container-fluid ps-5">
-            <p className="title bask ">Bask</p>
+            {/* <p className="title bask ">Bask</p>
             <div className="subtitlediv m-0 p-0">
               <p className="subtitle ms-2 typewriter">creative</p>
-            </div>
+            </div> */}
+            <img src={Bask} className="logo" alt="" />
+
           </div>
           <div className="container px-2" data-aos="fade-up">
             <p className="description  px-2  mx-1">
@@ -239,7 +254,12 @@ const Home = () => {
                 young and active.
               </p>
               <Row>
-                <Col md={4} className="px-2">
+                <Col md={4} className="px-2"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-cubic"
+                >
                   <p className="subheading yy">
                     <b>Creative Strategy</b>
                   </p>
@@ -252,7 +272,12 @@ const Home = () => {
                     as the brand.
                   </p>
                 </Col>
-                <Col md={4} className="px-2">
+                <Col md={4} className="px-2"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-cubic"
+                >
                   <p className="subheading yy">
                     <b>Big Idea</b>
                   </p>
@@ -263,8 +288,13 @@ const Home = () => {
                     find hard to cross.
                   </p>
                 </Col>
-                <Col md={4} className="px-2">
-                  {" "}
+                <Col md={4} className="px-2"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-cubic"
+                >
+                  
                   <p className="subheading yy">
                     <b>Great Execution</b>
                   </p>

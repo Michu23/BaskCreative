@@ -58,7 +58,14 @@
   letter-spacing: clamp(-1rem, 30vw, -3.5rem);
   margin: 0 !important;
   /* line-height: 14rem; */
-  line-height: clamp(1rem, 3vw, 10rem);
+  /* line-height: clamp(1rem, 3vw, 10rem); */
+  /* line-height: 0.1vw; */
+}
+
+.logo{
+  /* max-width: 900px; */
+  width: clamp(70%, 20vw, 800px);
+  margin-bottom: 60px !important;
 }
 
 .cp{
