@@ -516,8 +516,8 @@ const Home = () => {
                 </p>
               </Col>
               <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
-                <img src={Tanmay} width={200}></img>
-                <p className="teamheading">Tanmay Chattopadhyay </p>
+                <img src={Tanmay} width={240}></img>
+                <p className="teamheading">Dr. Tanmay Chattopadhyay </p>
                 <p className="text-white">
                   Director- Marketing Strategy & Services
                 </p>
@@ -543,7 +543,7 @@ const Home = () => {
                 </p>
               </Col>
               <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
-                <img src={Nisal} width={200}></img>
+                <img src={Nisal} width={240}></img>
                 <p className="teamheading">Nisal Mohamed </p>
                 <p className="text-white">
                   Director- Retail Strategy & Implementation
@@ -606,7 +606,7 @@ const Home = () => {
 
               <Col
                 md={4}
-                className="d-flex justify-content-center flex-column px-5 my-5 box"
+                className="d-flex flex-column px-5 my-5 box"
               >
                 <img src={Akansha} width={200}></img>
                 <p className="teamheading">Akansha</p>
