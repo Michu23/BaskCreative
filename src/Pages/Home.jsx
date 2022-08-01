@@ -12,28 +12,40 @@ import Sonica from "./Sonica.jpg";
 import Sasi from "./Sasi.jpg";
 import Vishaka from "./Vishaka.jpg";
 import Akansha from "./Akansha.jpg";
-import $ from 'jquery';
+import Nisal from "./Nisal.jpg";
+import Tanmay from "./Tanmay.jpg";
+
+import $ from "jquery";
 import axios from "axios";
 
 Aos.init();
 
 const handleSubmit = (e) => {
-    e.preventDefault();
-    const data = $("#submit_form").serialize();
-    console.log("Submitted");
+  e.preventDefault();
+  const data = $("#submit_form").serialize();
+  console.log("Submitted");
 
-    axios.post("https://script.google.com/macros/s/AKfycbyhBxBDYk5CbHa5Xq6IVw6_9zEOtewuw4FiN0cmELlr4r4vNTSfqhpvm7NwMP_QqAn7vg/exec", data,{headers:{"Accept":"application/json, text/plain, /","Content-Type": "multipart/form-data"}})
-    .then(res => {
-        console.log(res);
-        console.log(res.data);
-        console.log("Submitted");
-    }
-    ).catch(err => {
-        console.log(err);
-        console.log("Not Submitted");
-    }
-    );
-}
+  axios
+    .post(
+      "https://script.google.com/macros/s/AKfycbyhBxBDYk5CbHa5Xq6IVw6_9zEOtewuw4FiN0cmELlr4r4vNTSfqhpvm7NwMP_QqAn7vg/exec",
+      data,
+      {
+        headers: {
+          Accept: "application/json, text/plain, /",
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    )
+    .then((res) => {
+      console.log(res);
+      console.log(res.data);
+      console.log("Submitted");
+    })
+    .catch((err) => {
+      console.log(err);
+      console.log("Not Submitted");
+    });
+};
 
 const Home = () => {
   return (
@@ -71,46 +83,23 @@ const Home = () => {
             <div className="maincontent">
               <br />
               <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-cubic"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out-cubic"
               >
-                <p
-                className="heading2 ww"
-                
-              >
-                Rooted in
-              </p>
-              <p
-                className="heading2"
-                
-              >
-                Strategy.
-              </p>
+                <p className="heading2 ww">Rooted in</p>
+                <p className="heading2">Strategy.</p>
               </div>
               <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-cubic"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out-cubic"
               >
-
-                <p
-                className="heading2 ww"
-                
-              >
-                Fuelled
-              </p>
-              <p
-                className="heading2"
-                
-              >
-                by ideas.
-              </p>
+                <p className="heading2 ww">Fuelled</p>
+                <p className="heading2">by ideas.</p>
               </div>
-              
-              
             </div>
             <br />
             <br />
@@ -139,45 +128,40 @@ const Home = () => {
               <br />
               <div>
                 <a href="#weare">
-
-                    <p
-                  className="cp"
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-out-cubic"
-                  
-                >
-                  who we are
-                </p>
+                  <p
+                    className="cp"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out-cubic"
+                  >
+                    who we are
+                  </p>
                 </a>
                 <a href="#wedo">
-<p
-                  className="ww cp"
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-out-cubic"
-                  
-                >
-                  what we do
-                </p>
-
+                  <p
+                    className="ww cp"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out-cubic"
+                  >
+                    what we do
+                  </p>
                 </a>
 
-                <a href="#work"> <p
-                  className="cp"
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-out-cubic"
-                    
-                >
-                  work
-                </p></a>
-                
-                
-               
+                <a href="#work">
+                  {" "}
+                  <p
+                    className="cp"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out-cubic"
+                  >
+                    work
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -229,43 +213,19 @@ const Home = () => {
         </section>
         <section>
           <div>
-            <div className="maincontent"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out-cubic"
+            <div
+              className="maincontent"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out-cubic"
             >
               <br />
-              <p
-                className="heading2 ww"
-                
-              >
-                Powering
-              </p>
-              <p
-                className="heading2 ww"
-                
-              >
-                brands
-              </p>
-              <p
-                className="heading2"
-                
-              >
-                through
-              </p>
-              <p
-                className="heading2"
-                
-              >
-                creative
-              </p>
-              <p
-                className="heading2 ww"
-                
-              >
-                thinking.
-              </p>
+              <p className="heading2 ww">Powering</p>
+              <p className="heading2 ww">brands</p>
+              <p className="heading2">through</p>
+              <p className="heading2">creative</p>
+              <p className="heading2 ww">thinking.</p>
             </div>
             <br />
             <br />
@@ -279,33 +239,42 @@ const Home = () => {
                 young and active.
               </p>
               <Row>
-                <Col md={4} className="px-2"><p className="subheading yy"><b>Creative Strategy</b></p>
-              <p className="description  px-2  mx-2">
-                The basis of everything that the Outsiders do. This is arrived
-                at from understanding theconsumer. Not what they ask for or what
-                they want or what they tell us. But by mining subconscious
-                desires that lie under the surface of the mind of the consumer.
-                Andcorrelating it with the market as well as the brand.
-              </p>
+                <Col md={4} className="px-2">
+                  <p className="subheading yy">
+                    <b>Creative Strategy</b>
+                  </p>
+                  <p className="description  px-2  mx-2">
+                    The basis of everything that the Outsiders do. This is
+                    arrived at from understanding theconsumer. Not what they ask
+                    for or what they want or what they tell us. But by mining
+                    subconscious desires that lie under the surface of the mind
+                    of the consumer. Andcorrelating it with the market as well
+                    as the brand.
+                  </p>
                 </Col>
-                <Col md={4} className="px-2"><p className="subheading yy"><b>Big Idea</b></p>
-              <p className="description  px-2  mx-2">
-                The holy grail of this business. If we don’t get a big idea, we
-                try harder until we have one. Big ideas are what differentiate
-                the brand and create a moat that competitors find hard to cross.
-              </p>
+                <Col md={4} className="px-2">
+                  <p className="subheading yy">
+                    <b>Big Idea</b>
+                  </p>
+                  <p className="description  px-2  mx-2">
+                    The holy grail of this business. If we don’t get a big idea,
+                    we try harder until we have one. Big ideas are what
+                    differentiate the brand and create a moat that competitors
+                    find hard to cross.
+                  </p>
                 </Col>
-                <Col md={4} className="px-2"> <p className="subheading yy"><b>Great Execution</b></p>
-              <p className="description  px-2  mx-2">
-                As Bernbach said, execution is content in a work of art. We are
-                always trying to get there. Take a powerful idea and execute it
-                till it transforms into something even bigger.
-              </p>
+                <Col md={4} className="px-2">
+                  {" "}
+                  <p className="subheading yy">
+                    <b>Great Execution</b>
+                  </p>
+                  <p className="description  px-2  mx-2">
+                    As Bernbach said, execution is content in a work of art. We
+                    are always trying to get there. Take a powerful idea and
+                    execute it till it transforms into something even bigger.
+                  </p>
                 </Col>
               </Row>
-              
-              
-             
 
               <br />
               <br />
@@ -358,41 +327,41 @@ const Home = () => {
                 and not the hard work that saps your energy.
               </p>
               <div className="quote px-2">
-                <p className="subheading yy"><b>Our spirit</b></p>
-              <p
-                className="heading2 ww"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
-              >
-                ‘I tap dance
-              </p>
-              <p
-                className="heading2 ww"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
-              >
-                to work
-              </p>
+                <p className="subheading yy">
+                  <b>Our spirit</b>
+                </p>
+                <p
+                  className="heading2 ww"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out-cubic"
+                >
+                  ‘I tap dance
+                </p>
+                <p
+                  className="heading2 ww"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out-cubic"
+                >
+                  to work
+                </p>
 
-              <p
-                className="heading2 ww"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
-              >
-                every day.’
-              </p>
-            <div className="d-flex justify-content-end">
-
-              <p className="subheading2 yy">- Warren Buffett</p>
-            </div>
+                <p
+                  className="heading2 ww"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out-cubic"
+                >
+                  every day.’
+                </p>
+                <div className="d-flex justify-content-end">
+                  <p className="subheading2 yy">- Warren Buffett</p>
+                </div>
               </div>
-              
 
               <p className="subheading yy">Creative Soul. Digital Heart</p>
 
@@ -452,7 +421,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        
 
         <section className="container-fluid w-100" id="work">
           <div className="yy mb-5">
@@ -462,7 +430,7 @@ const Home = () => {
             <Row className="mx-2">
               <Col md={4} className="d-flex  flex-column px-5 my-5  box">
                 <img src={Sampath} width={250}></img>
-                <p className="teamheading">Sambath</p>
+                <p className="teamheading">Sampath</p>
                 <p className="text-white">Founder and CEO</p>
                 <br />
                 <p className="text-white">
@@ -500,24 +468,28 @@ const Home = () => {
                 className="d-flex  flex-column px-5 my-5 box align-items-start"
               >
                 <img src={Pramoda} width={200}></img>
-                <p className="teamheading">Pramoda Kumar</p>
+                <p className="teamheading">Pramoda Rangari</p>
                 <p className="text-white">Director- Design</p>
                 <br />
 
                 <p className="text-white">
-                  Sampath has varied experience in working with some of the
-                  finest creative agencies in India including Enterprise
-                  Advertising, Ambience, JWT and Contract. Over a career
-                  spanning 30 years he has worked on many multi-national as well
-                  as leading Indian Brands. The last 15 years he has been
-                  creating and helming his own ventures including start-ups in
-                  the charity and food & beverages space. With Black, his latest
-                  venture, he is fashioning the agency of his dreams.
+                  Pramod Rangari has evolved over the last 30 years from being a
+                  pure play advertising art director to being the design guru
+                  that he is today. His work has spanned advertising campaigns
+                  and design work for a host of national and international
+                  brands including, Axis Bank, Bank Of America, Standard and
+                  Poor Global, Harmon Kardon, Mahindra, CGH Earth, Asian Paints,
+                  Cadbury, Taj Hotels, Vodafone, the Prince Charles Foundation
+                  and the Reliance Foundation. He has worked for trailblazing
+                  creative agencies like Ambience and Enterprise at the start of
+                  his career and then moved on to Lowe-Lintas before being
+                  called by Ogilvy to set up and head their India Design
+                  Division.
                 </p>
               </Col>
-            </Row>
-            <br />
-            <Row>
+
+              <br />
+
               <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
                 <img src={Sonica} width={200}></img>
                 <p className="teamheading">Sonica Singh</p>
@@ -533,7 +505,7 @@ const Home = () => {
                   Marketing, Content Strategy, Social Media Strategy, SEO
                   Strategy, Marketing Automation Strategy Analytics. These are
                   some of the things she handles in her stride on an everyday
-                  basis. Her experiences include working with micro, small and
+                  basis. Her experiences include working with micro, small and
                   mid-sized clients to large corporations through her agency
                   engagements. She has worked with clients in hospitality,
                   fitness and wellness, fashion, healthcare, retail, real
@@ -541,6 +513,57 @@ const Home = () => {
                   Before she dived headlong into the digital world she had
                   various sales and marketing roles with Taj Hotels, ITC Hotels,
                   The Ritz-Carlton Hotel Company and Accor Hotels .
+                </p>
+              </Col>
+              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
+                <img src={Tanmay} width={200}></img>
+                <p className="teamheading">Tanmay Chattopadhyay </p>
+                <p className="text-white">
+                  Director- Marketing Strategy & Services
+                </p>
+                <br />
+
+                <p className="text-white">
+                  Tanmay not only comes with all the right qualifications but
+                  also loves solving problems, especially those related to
+                  marketing and business strategy. He is that perfect,
+                  passionate, marketing guy a creative agency falls in love
+                  with. He has headed Marketing and Business Strategy at Exide
+                  and Amara Raja Batteries. He was also the marketing brains
+                  behind the success of Uniball and Linc Pens. And his efforts
+                  made Goodyear Tyres a market leader in the country. With a a
+                  doctorate degree in management from Birla Institute of
+                  Technology, a post graduate degree in management from
+                  Symbiosis Institute of Management Studies, and a graduate
+                  degree in Chemical Engineering and Chemistry from the
+                  University of Kolkata. Tanmay is a self-starter and has a
+                  spark in his eyes when he talks about marketing (maybe it has
+                  something to do with his long stints at automotive battery
+                  companies).
+                </p>
+              </Col>
+              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
+                <img src={Nisal} width={200}></img>
+                <p className="teamheading">Nisal Mohamed </p>
+                <p className="text-white">
+                  Director- Retail Strategy & Implementation
+                </p>
+                <br />
+
+                <p className="text-white">
+                  Nisal has been there, done that. His down-to-earth demeanour
+                  and can-do attitude carry the day. For over 20 years, he has
+                  been the man companies reached out to implement retail
+                  strategies across the country. His experiences range from
+                  setting up retail stores in India, hypermarkets in Oman, and
+                  running the Liverpool Football Academy in Dubai. He has
+                  launched both premium and discount format stores and appointed
+                  and managed franchisees. Mapped the market for tractors for
+                  Escorts. Managed diversification of personal care products for
+                  ITC. And conceptualized and implemented the ‘All Steel’ Store
+                  in  Kolkata for the Tata Group. He will lead  Bask’s work in
+                  the retail space, devising strategies and implementing retail
+                  experiences across domains.
                 </p>
               </Col>
               <Col
@@ -565,7 +588,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="d-flex flex-column px-5 my-5 box">
                 <img src={Vishaka} width={200}></img>
-                <p className="teamheading">Vishaka</p>
+                <p className="teamheading">Vishakha</p>
                 <p className="text-white">Account Manager</p>
                 <br />
 
@@ -578,9 +601,9 @@ const Home = () => {
                   agency.
                 </p>
               </Col>
-            </Row>
-            <br />
-            <Row>
+
+              <br />
+
               <Col
                 md={4}
                 className="d-flex justify-content-center flex-column px-5 my-5 box"
@@ -609,47 +632,53 @@ const Home = () => {
             <Row>
               <Col md={6}>
                 <Container fluid className="px-2">
-              <h1 className="ww pb-2 display-6">Communicate with us!</h1>
-                <form className="text-white" id="submit_form" onSubmit={(e)=>{
-                  e.preventDefault();
-                  // const data = $("#submit_form").serialize();
-                  // console.log(data);
+                  <h1 className="ww pb-2 display-6">Communicate with us!</h1>
+                  <form
+                    className="text-white"
+                    id="submit_form"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      // const data = $("#submit_form").serialize();
+                      // console.log(data);
 
-                    handleSubmit(e)
-                    }}>
-                  <div className="form-group my-2">
-                    <label for="exampleFormControlInput1">Name</label>
+                      handleSubmit(e);
+                    }}
+                  >
+                    <div className="form-group my-2">
+                      <label for="exampleFormControlInput1">Name</label>
+                      <input
+                        type="text"
+                        className="form-control py-2"
+                        id="exampleFormControlInput1"
+                        name="name"
+                      />
+                    </div>
+                    <div className="form-group my-2">
+                      <label for="exampleFormControlInput1">
+                        Email address
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control py-2"
+                        id="exampleFormControlInput1"
+                        name="email"
+                      />
+                    </div>
+                    <div className="form-group my-2">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea
+                        className="form-control py-2"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        name="message"
+                      ></textarea>
+                    </div>
                     <input
-                      type="text"
-                      className="form-control py-2"
-                      id="exampleFormControlInput1"
-                      name="name"
+                      type="submit"
+                      className="btn btn-primary w-25 h-100 "
+                      value="Submit"
                     />
-                  </div>
-                  <div className="form-group my-2">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input
-                      type="email"
-                      className="form-control py-2"
-                      id="exampleFormControlInput1"
-                      name="email"
-                    />
-                  </div>
-                  <div className="form-group my-2">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea
-                      className="form-control py-2"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      name="message"
-                    ></textarea>
-                  </div>
-                  <input
-                    type="submit"
-                    className="btn btn-primary w-25 h-100 "
-                    value="Submit"
-                  />
-                </form>
+                  </form>
                 </Container>
               </Col>
               <Col md={6} className="px-4">
@@ -663,46 +692,43 @@ const Home = () => {
                 ></iframe> */}
 
                 <div className="text-white pt-5">
-                <p>
-                LET’S TALK BUSINESS
-                <br></br>
-                prabhakar@blackis.in
-                </p>
-                <br></br>
+                  <p>
+                    LET’S TALK BUSINESS
+                    <br></br>
+                    prabhakar@blackis.in
+                  </p>
+                  <br></br>
 
-                <p>
-                CALL IT OUT
-                <br></br>
-                +91 99809 12312
-                </p>
-                <br></br>
+                  <p>
+                    CALL IT OUT
+                    <br></br>
+                    +91 99809 12312
+                  </p>
+                  <br></br>
 
-                <p>
-                BE A OUTSIDER
-                <br></br>
-                info@blackis.in
-                </p>
-                <br></br>
+                  <p>
+                    BE A OUTSIDER
+                    <br></br>
+                    info@blackis.in
+                  </p>
+                  <br></br>
 
-
-                <p>
-                CONNECT
-                <br></br>
-                Instagram
-                <br></br>
-                Facebook
-                <br></br>
-                Linkedin
-                </p>
-                <br></br>
-
+                  <p>
+                    CONNECT
+                    <br></br>
+                    Instagram
+                    <br></br>
+                    Facebook
+                    <br></br>
+                    Linkedin
+                  </p>
+                  <br></br>
                 </div>
               </Col>
             </Row>
           </div>
         </section>
       </div>
-      
     </>
   );
 };
