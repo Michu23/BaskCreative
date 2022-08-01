@@ -3,7 +3,7 @@ import Main from "../Components/Main";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ProgressBar from "react-progressbar-on-scroll";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 import Sampath from "./Sampath.jpg";
 import Prabhakar from "./Prabhakar.jpg";
@@ -12,12 +12,27 @@ import Sonica from "./Sonica.jpg";
 import Sasi from "./Sasi.jpg";
 import Vishaka from "./Vishaka.jpg";
 import Akansha from "./Akansha.jpg";
+import $ from 'jquery';
+import axios from "axios";
 
 Aos.init();
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    const data = $("#submit_form").serialize();
     console.log("Submitted");
+
+    axios.post("https://script.google.com/macros/s/AKfycbyhBxBDYk5CbHa5Xq6IVw6_9zEOtewuw4FiN0cmELlr4r4vNTSfqhpvm7NwMP_QqAn7vg/exec", data,{headers:{"Accept":"application/json, text/plain, /","Content-Type": "multipart/form-data"}})
+    .then(res => {
+        console.log(res);
+        console.log(res.data);
+        console.log("Submitted");
+    }
+    ).catch(err => {
+        console.log(err);
+        console.log("Not Submitted");
+    }
+    );
 }
 
 const Home = () => {
@@ -32,14 +47,14 @@ const Home = () => {
           data-aos-duration="2000"
           data-aos-easing="ease-in-out-cubic"
         >
-          <div className="maincontent first container-fluid" data-aos="fade-up">
+          <div className="maincontent first container-fluid">
             <p className="title bask ">Bask</p>
             <div className="subtitlediv m-0 p-0">
-              <p className="subtitle ms-2">creative</p>
+              <p className="subtitle ms-2 typewriter">creative</p>
             </div>
           </div>
           <div className="container px-2" data-aos="fade-up">
-            <p className="description mx-1">
+            <p className="description  px-2  mx-1">
               Bask in the bright lights of fame. Be the brand that everyone
               wants. Be desired. Be admired. Be possessed. We will do everything
               that’s required to put your brand in the limelight. And be made
@@ -55,48 +70,53 @@ const Home = () => {
           <div>
             <div className="maincontent">
               <br />
-              <p
+              <div
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out-cubic"
+              >
+                <p
                 className="heading2 ww"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
+                
               >
                 Rooted in
               </p>
               <p
                 className="heading2"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
+                
               >
                 Strategy.
               </p>
-              <p
+              </div>
+              <div
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out-cubic"
+              >
+
+                <p
                 className="heading2 ww"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
+                
               >
                 Fuelled
               </p>
               <p
                 className="heading2"
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out-cubic"
+                
               >
                 by ideas.
               </p>
+              </div>
+              
+              
             </div>
             <br />
             <br />
 
             <div className="container">
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 Being creative begins with a great strategy. Without a great
                 strategy, there’s no great creativity. You will see that every
                 great campaign ever, every great brand that was ever created all
@@ -166,7 +186,7 @@ const Home = () => {
         <section className="purpose-driven">
           <div className="maincontent">
             <p
-              className="heading2 ww"
+              className="heading22 ww"
               data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="2000"
@@ -175,7 +195,7 @@ const Home = () => {
               Purpose
             </p>
             <p
-              className="heading2"
+              className="heading22"
               data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="2000"
@@ -189,7 +209,7 @@ const Home = () => {
               <p className="subheading ms-2">
                 Purpose-The framework behind every great brand.
               </p>
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 We believe we are not separate, but one. Everything that we do
                 stems from the awareness that whatever affects everyone affects
                 us too. So we try to infuse purpose into every brand we work
@@ -251,33 +271,41 @@ const Home = () => {
             <br />
 
             <div className="container">
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 Every brand has access to analytics. When you infuse creative
                 thinking into this, you unleash insights that have the power to
                 move markets. If your brand needs an infusion of creativity,
                 call us. Creativity is the energy brands need to keep themselves
                 young and active.
               </p>
-              <p className="subheading yy">Creative Strategy</p>
-              <p className="description mx-2">
+              <Row>
+                <Col md={4} className="px-2"><p className="subheading yy">Creative Strategy</p>
+              <p className="description  px-2  mx-2">
                 The basis of everything that the Outsiders do. This is arrived
                 at from understanding theconsumer. Not what they ask for or what
                 they want or what they tell us. But by mining subconscious
                 desires that lie under the surface of the mind of the consumer.
                 Andcorrelating it with the market as well as the brand.
               </p>
-              <p className="subheading yy">Big Idea</p>
-              <p className="description mx-2">
+                </Col>
+                <Col md={4} className="px-2"><p className="subheading yy">Big Idea</p>
+              <p className="description  px-2  mx-2">
                 The holy grail of this business. If we don’t get a big idea, we
                 try harder until we have one. Big ideas are what differentiate
                 the brand and create a moat that competitors find hard to cross.
               </p>
-              <p className="subheading yy">Great Execution</p>
-              <p className="description mx-2">
+                </Col>
+                <Col md={4} className="px-2"> <p className="subheading yy">Great Execution</p>
+              <p className="description  px-2  mx-2">
                 As Bernbach said, execution is content in a work of art. We are
                 always trying to get there. Take a powerful idea and execute it
                 till it transforms into something even bigger.
               </p>
+                </Col>
+              </Row>
+              
+              
+             
 
               <br />
               <br />
@@ -292,7 +320,7 @@ const Home = () => {
             <div className="maincontent">
               <br />
               <p
-                className="heading2 ww"
+                className="heading22 ww"
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -301,7 +329,7 @@ const Home = () => {
                 Who
               </p>
               <p
-                className="heading2 ww"
+                className="heading22 ww"
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -314,7 +342,7 @@ const Home = () => {
             <br />
 
             <div className="container">
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 We are a group of experienced professionals and young minds with
                 the united intention of creating ground-breaking work for brands
                 across the spectrum. We treat everyone equitably and try to
@@ -329,7 +357,8 @@ const Home = () => {
                 monotonous drivel. We believe in hard work that energises you
                 and not the hard work that saps your energy.
               </p>
-              <p className="subheading yy">Our spirit</p>
+              <div className="quote px-2">
+                <p className="subheading yy">Our spirit</p>
               <p
                 className="heading2 ww"
                 data-aos="fade-up"
@@ -358,12 +387,16 @@ const Home = () => {
               >
                 every day.’
               </p>
+            <div className="d-flex justify-content-end">
 
-              <p className="subheading yy">- Warren Buffett</p>
+              <p className="subheading2 yy">- Warren Buffett</p>
+            </div>
+              </div>
+              
 
               <p className="subheading yy">Creative Soul. Digital Heart</p>
 
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 Though we emphasise the importance of everything that we do, we
                 are also very digitally savvy. We have a team that is
                 experienced in digital strategy and execution across Performance
@@ -371,7 +404,7 @@ const Home = () => {
                 advertising.
               </p>
 
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 Digital Strategy | Websites | UI/UX | Apps | SEO | Social Media
                 Strategy | Social Media Content Social Media Analytics | Content
                 Writing | Performance Marketing | Social Media Marketing Native
@@ -410,7 +443,7 @@ const Home = () => {
             <br />
 
             <div className="container">
-              <p className="description mx-2">
+              <p className="description  px-2  mx-2">
                 Brand Strategy | Identity Design | Packaging | Communication
                 Campaigns | Performance Marketing | Social Campaigns | Native
                 Advertising | Websites | Blogs | Experience Design
@@ -419,7 +452,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section></section>
+        
 
         <section className="container-fluid w-100" id="work">
           <div className="yy mb-5">
@@ -427,9 +460,9 @@ const Home = () => {
           </div>
           <div className="container">
             <Row className="mx-2">
-              <Col md={4} className="d-flex  flex-column px-5  box">
+              <Col md={4} className="d-flex  flex-column px-5 my-5  box">
                 <img src={Sampath} width={250}></img>
-                <p className="subheading">Sambath</p>
+                <p className="teamheading">Sambath</p>
                 <p className="text-white">Founder and CEO</p>
                 <br />
                 <p className="text-white">
@@ -443,9 +476,9 @@ const Home = () => {
                   venture, he is fashioning the agency of his dreams.
                 </p>
               </Col>
-              <Col md={4} className="d-flex  flex-column px-5 box">
+              <Col md={4} className="d-flex  flex-column px-5 my-5 box">
                 <img src={Prabhakar} width={200}></img>
-                <p className="subheading">C P Prabhakaran</p>
+                <p className="teamheading">C P Prabhakaran</p>
                 <p className="text-white">Director- Business</p>
                 <br />
 
@@ -464,10 +497,10 @@ const Home = () => {
               </Col>
               <Col
                 md={4}
-                className="d-flex  flex-column px-5 box align-items-start"
+                className="d-flex  flex-column px-5 my-5 box align-items-start"
               >
                 <img src={Pramoda} width={200}></img>
-                <p className="subheading">Pramoda Kumar</p>
+                <p className="teamheading">Pramoda Kumar</p>
                 <p className="text-white">Director- Design</p>
                 <br />
 
@@ -485,9 +518,9 @@ const Home = () => {
             </Row>
             <br />
             <Row>
-              <Col md={4} className="d-flex  flex-column px-5 box ">
+              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
                 <img src={Sonica} width={200}></img>
-                <p className="subheading">Sonica Singh</p>
+                <p className="teamheading">Sonica Singh</p>
                 <p className="text-white">
                   Head-Digital marketing and Strategy
                 </p>
@@ -512,10 +545,10 @@ const Home = () => {
               </Col>
               <Col
                 md={4}
-                className="d-flex  flex-column px-5  box align-items-start"
+                className="d-flex  flex-column px-5 my-5  box align-items-start"
               >
                 <img src={Sasi} width={200} className=""></img>
-                <p className="subheading">Sasi Bhaskaran</p>
+                <p className="teamheading">Sasi Bhaskaran</p>
                 <p className="text-white">Creative Director- Art</p>
                 <br />
 
@@ -530,9 +563,9 @@ const Home = () => {
                   you will find him to be a man of few words.
                 </p>
               </Col>
-              <Col md={4} className="d-flex flex-column px-5 box">
+              <Col md={4} className="d-flex flex-column px-5 my-5 box">
                 <img src={Vishaka} width={200}></img>
-                <p className="subheading">Vishaka</p>
+                <p className="teamheading">Vishaka</p>
                 <p className="text-white">Account Manager</p>
                 <br />
 
@@ -550,10 +583,10 @@ const Home = () => {
             <Row>
               <Col
                 md={4}
-                className="d-flex justify-content-center flex-column px-5 box"
+                className="d-flex justify-content-center flex-column px-5 my-5 box"
               >
                 <img src={Akansha} width={200}></img>
-                <p className="subheading">Akansha</p>
+                <p className="teamheading">Akansha</p>
                 <p className="text-white">Art Director</p>
                 <br />
 
@@ -574,17 +607,24 @@ const Home = () => {
           </div>
           <div className="container">
             <Row>
-              <Col>
+              <Col md={6}>
+                <Container fluid className="px-2">
               <h1 className="ww pb-2 display-6">Communicate with us!</h1>
                 <form className="text-white" id="submit_form" onSubmit={(e)=>{
+                  e.preventDefault();
+                  // const data = $("#submit_form").serialize();
+                  // console.log(data);
+
                     handleSubmit(e)
                     }}>
                   <div className="form-group my-2">
                     <label for="exampleFormControlInput1">Name</label>
                     <input
-                      type="email"
+                      type="text"
                       className="form-control py-2"
                       id="exampleFormControlInput1"
+                      placeholder="Enter your name"
+                      name="name"
                     />
                   </div>
                   <div className="form-group my-2">
@@ -593,6 +633,8 @@ const Home = () => {
                       type="email"
                       className="form-control py-2"
                       id="exampleFormControlInput1"
+                      placeholder="Enter your email"
+                      name="email"
                     />
                   </div>
                   <div className="form-group my-2">
@@ -601,6 +643,7 @@ const Home = () => {
                       className="form-control py-2"
                       id="exampleFormControlTextarea1"
                       rows="3"
+                      name="message"
                     ></textarea>
                   </div>
                   <input
@@ -609,16 +652,17 @@ const Home = () => {
                     value="Submit"
                   />
                 </form>
+                </Container>
               </Col>
-              <Col className="ps-5">
+              <Col md={6} className="px-4 mt-5">
                 <h1 className="ww pb-2 display-6">Bangalore</h1>
-                <iframe
+                {/* <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15552.655758383615!2d77.6350955!3d12.9613594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01b32340b5de090!2sMNR%20PRIDE!5e0!3m2!1sen!2sin!4v1659097414987!5m2!1sen!2sin"
                   className="w-100 h-50 pe-5"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></iframe> */}
 
                 <div className="text-white pt-5">
                 <p>

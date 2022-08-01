@@ -37,8 +37,9 @@
 :root{
   --fs-xl: clamp(10rem, 30vw  , 20rem);
   --fs-lg: clamp(3rem, 6vw, 20rem);
-  --fs-md: clamp(0.2rem, 30vw, 1.5rem);
+  --fs-md: clamp(0.2rem, 30vw, 1.2rem);
   --fs-subheading: clamp(0.6rem, 30vw, 2.5rem);
+  --fs-subheading2: clamp(0.3rem, 20vw, 2rem);
   
 }
 
@@ -72,6 +73,31 @@
   letter-spacing: clamp(-2rem, 3vw, 10rem);
 }
 
+
+.typewriter {
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+  /* width: max-content !important; */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 .contain {
   min-height: 100vh;
   max-height: fit-content;
@@ -94,6 +120,10 @@ section{
 
 }
 
+.quote{
+  max-width: 700px;
+}
+
 
 .subtitlediv{
   margin-top: -275px !important;
@@ -103,6 +133,7 @@ section{
   /* font-size: 1.3rem; */
   font-size: var(--fs-md);
   margin-top: 2rem !important;
+
   /* margin-left: 1rem !important; */
   color: var(--white);
   font-family: 'Proxima Nova', sans-serif;
@@ -113,6 +144,20 @@ section{
   /* font-size: 1.3rem; */
   font-size: var(--fs-subheading);
   margin-top: 3rem !important;
+  color: var(--white);
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.subheading2{
+  /* font-size: 1.3rem; */
+  font-size: var(--fs-subheading2);
+  margin-top: 3rem !important;
+  color: var(--white);
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.teamheading{
+  font-size: var(--fs-subheading);
   color: var(--white);
   font-family: 'Proxima Nova', sans-serif;
 }
@@ -130,6 +175,22 @@ section{
  .heading2{
   /* font-size: 10rem; */
   font-size: clamp(1.5rem, 20vw, 6rem);
+  font-weight: 1000 !important;
+  color: var(--yellow);
+  font-family: 'Proxima Nova', sans-serif;
+  margin: 0 !important;
+  line-height: 6rem;
+ }
+
+ /* .purpose-driven{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+ } */
+
+ .heading22{
+  /* font-size: 10rem; */
+  font-size: clamp(1.5rem, 20vw, 9rem);
   font-weight: 1000 !important;
   color: var(--yellow);
   font-family: 'Proxima Nova', sans-serif;
@@ -173,7 +234,5 @@ section{
   margin-left: 4rem !important;
 } */
 
-.box{
-  /* height: 60rem !important; */
-}
+
 
