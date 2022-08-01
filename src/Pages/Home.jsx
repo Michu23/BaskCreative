@@ -47,7 +47,7 @@ const Home = () => {
           data-aos-duration="2000"
           data-aos-easing="ease-in-out-cubic"
         >
-          <div className="maincontent first container-fluid">
+          <div className="maincontent first container-fluid ps-5">
             <p className="title bask ">Bask</p>
             <div className="subtitlediv m-0 p-0">
               <p className="subtitle ms-2 typewriter">creative</p>
@@ -184,9 +184,9 @@ const Home = () => {
         </section>
 
         <section className="purpose-driven">
-          <div className="maincontent">
+          <div className="maincontent2">
             <p
-              className="heading22 ww"
+              className="heading22 ww z-index"
               data-aos="fade-right"
               data-aos-delay="50"
               data-aos-duration="2000"
@@ -279,7 +279,7 @@ const Home = () => {
                 young and active.
               </p>
               <Row>
-                <Col md={4} className="px-2"><p className="subheading yy">Creative Strategy</p>
+                <Col md={4} className="px-2"><p className="subheading yy"><b>Creative Strategy</b></p>
               <p className="description  px-2  mx-2">
                 The basis of everything that the Outsiders do. This is arrived
                 at from understanding theconsumer. Not what they ask for or what
@@ -288,14 +288,14 @@ const Home = () => {
                 Andcorrelating it with the market as well as the brand.
               </p>
                 </Col>
-                <Col md={4} className="px-2"><p className="subheading yy">Big Idea</p>
+                <Col md={4} className="px-2"><p className="subheading yy"><b>Big Idea</b></p>
               <p className="description  px-2  mx-2">
                 The holy grail of this business. If we don’t get a big idea, we
                 try harder until we have one. Big ideas are what differentiate
                 the brand and create a moat that competitors find hard to cross.
               </p>
                 </Col>
-                <Col md={4} className="px-2"> <p className="subheading yy">Great Execution</p>
+                <Col md={4} className="px-2"> <p className="subheading yy"><b>Great Execution</b></p>
               <p className="description  px-2  mx-2">
                 As Bernbach said, execution is content in a work of art. We are
                 always trying to get there. Take a powerful idea and execute it
@@ -358,7 +358,7 @@ const Home = () => {
                 and not the hard work that saps your energy.
               </p>
               <div className="quote px-2">
-                <p className="subheading yy">Our spirit</p>
+                <p className="subheading yy"><b>Our spirit</b></p>
               <p
                 className="heading2 ww"
                 data-aos="fade-up"
@@ -421,7 +421,7 @@ const Home = () => {
             <div className="maincontent">
               <br />
               <p
-                className="heading2 ww"
+                className="heading22 ww"
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -430,7 +430,7 @@ const Home = () => {
                 What
               </p>
               <p
-                className="heading2 ww"
+                className="heading22 ww"
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -623,7 +623,6 @@ const Home = () => {
                       type="text"
                       className="form-control py-2"
                       id="exampleFormControlInput1"
-                      placeholder="Enter your name"
                       name="name"
                     />
                   </div>
@@ -633,7 +632,6 @@ const Home = () => {
                       type="email"
                       className="form-control py-2"
                       id="exampleFormControlInput1"
-                      placeholder="Enter your email"
                       name="email"
                     />
                   </div>
@@ -648,13 +646,13 @@ const Home = () => {
                   </div>
                   <input
                     type="submit"
-                    className="btn btn-primary w-25"
+                    className="btn btn-primary w-25 h-100 "
                     value="Submit"
                   />
                 </form>
                 </Container>
               </Col>
-              <Col md={6} className="px-4 mt-5">
+              <Col md={6} className="px-4">
                 <h1 className="ww pb-2 display-6">Bangalore</h1>
                 {/* <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15552.655758383615!2d77.6350955!3d12.9613594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01b32340b5de090!2sMNR%20PRIDE!5e0!3m2!1sen!2sin!4v1659097414987!5m2!1sen!2sin"

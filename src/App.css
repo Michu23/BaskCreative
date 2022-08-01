@@ -37,7 +37,7 @@
 :root{
   --fs-xl: clamp(10rem, 30vw  , 20rem);
   --fs-lg: clamp(3rem, 6vw, 20rem);
-  --fs-md: clamp(0.2rem, 30vw, 1.2rem);
+  --fs-md: clamp(0.2rem, 30vw, 1rem);
   --fs-subheading: clamp(0.6rem, 30vw, 2.5rem);
   --fs-subheading2: clamp(0.3rem, 20vw, 2rem);
   
@@ -165,6 +165,23 @@ section{
 .maincontent {
   line-height: 14rem;
   /* padding-left: 50px !important; */
+ }
+.maincontent2 {
+  line-height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start !important;
+  /* padding-left: 50px !important; */
+ }
+
+ .purpose-driven{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: left !important;
+ }
+
+ .z-index{
+  z-index: 100;
  }
 
 .maincontent .first {
