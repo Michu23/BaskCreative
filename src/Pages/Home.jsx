@@ -213,6 +213,7 @@ const Home = () => {
                     Contact us
                     <br></br>
                     prabhakar@blackis.in
+                    <br/>
                     +91 99809 12312
                   </p>
                   <br></br>
