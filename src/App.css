@@ -64,8 +64,8 @@
 
 .logo{
   /* max-width: 900px; */
-  width: clamp(350px, 60vw, 900px);
-  margin-bottom: 60px !important;
+  width: clamp(350px, 75vw, 1000px);
+  /* margin-bottom: 20px !important; */
 }
 
 .logo2{
@@ -140,6 +140,7 @@ section{
   color: var(--white);
   font-family: 'Proxima Nova', sans-serif;
   max-width: 800px !important;
+  /* justify-content: center; */
 }
 
 .prps{
@@ -192,8 +193,11 @@ section{
 
 .maincontent {
   line-height: 14rem;
+  /* display: flex; */
+  /* justify-content: left !important; */
   /* padding-left: 50px !important; */
  }
+
 .maincontent2 {
   line-height: 16rem;
   display: flex;

@@ -114,6 +114,7 @@ const Home = () => {
               >
                 we do
               </p> */}
+              
               <img src={Wedo} alt="" className="logo"
               data-aos="fade-up"
               data-aos-delay="50"

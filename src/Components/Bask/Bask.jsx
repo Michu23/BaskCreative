@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Baskk from "./baskcreativeagency.svg";
+import Logo from "./L2.png";
 
 const Bask = () => {
   return (
@@ -21,7 +22,7 @@ const Bask = () => {
             <div className="subtitlediv m-0 p-0">
               <p className="subtitle ms-2 typewriter">creative</p>
             </div> */}
-            <img src={Baskk} className="logo" alt="" />
+            <img src={Logo} className="logo" alt="" />
 
           </div>
           <div className="container px-2" data-aos="fade-up">

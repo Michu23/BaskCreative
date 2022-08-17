@@ -13,12 +13,16 @@ import Tanmay from "./Tanmay.jpg";
 const Team = () => {
   return (
     <section className="container-fluid w-100" id="work">
-          <div className="yy mb-5">
+          <div className="yy mb-5 d-flex justify-content-center">
+            <b>
+
+              
+            </b>
             <h1 className="display-1 mb-3">Our Team</h1>
           </div>
           <div className="container">
             <Row className="mx-2">
-              <Col md={4} className="d-flex  flex-column px-5 my-5  box">
+              <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5  box">
                 <img src={Sampath} width={250}></img>
                 <p className="teamheading">Sampath</p>
                 <p className="text-white">Founder and CEO</p>
@@ -34,7 +38,7 @@ const Team = () => {
                   venture, he is fashioning the agency of his dreams.
                 </p>
               </Col>
-              <Col md={4} className="d-flex  flex-column px-5 my-5 box">
+              <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box">
                 <img src={Prabhakar} width={200}></img>
                 <p className="teamheading">C P Prabhakaran</p>
                 <p className="text-white">Director- Business</p>
@@ -54,7 +58,7 @@ const Team = () => {
                 </p>
               </Col>
               <Col
-                md={4}
+                md={4}  sm={6} xs={12} 
                 className="d-flex  flex-column px-5 my-5 box align-items-start"
               >
                 <img src={Pramoda} width={200}></img>
@@ -80,7 +84,7 @@ const Team = () => {
 
               <br />
 
-              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
+              <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box ">
                 <img src={Sonica} width={200}></img>
                 <p className="teamheading">Sonica Singh</p>
                 <p className="text-white">
@@ -105,7 +109,7 @@ const Team = () => {
                   The Ritz-Carlton Hotel Company and Accor Hotels .
                 </p>
               </Col>
-              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
+              <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box ">
                 <img src={Tanmay} width={240}></img>
                 <p className="teamheading">Dr. Tanmay Chattopadhyay </p>
                 <p className="text-white">
@@ -132,7 +136,7 @@ const Team = () => {
                   companies).
                 </p>
               </Col>
-              <Col md={4} className="d-flex  flex-column px-5 my-5 box ">
+              <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box ">
                 <img src={Nisal} width={240}></img>
                 <p className="teamheading">Nisal Mohamed </p>
                 <p className="text-white">
@@ -157,7 +161,7 @@ const Team = () => {
                 </p>
               </Col>
               <Col
-                md={4}
+                md={4}  sm={6} xs={12} 
                 className="d-flex  flex-column px-5 my-5  box align-items-start"
               >
                 <img src={Sasi} width={200} className=""></img>
@@ -176,7 +180,7 @@ const Team = () => {
                   you will find him to be a man of few words.
                 </p>
               </Col>
-              <Col md={4} className="d-flex flex-column px-5 my-5 box">
+              <Col md={4}  sm={6} xs={12}  className="d-flex flex-column px-5 my-5 box">
                 <img src={Vishaka} width={200}></img>
                 <p className="teamheading">Vishakha</p>
                 <p className="text-white">Account Manager</p>
@@ -195,7 +199,7 @@ const Team = () => {
               <br />
 
               <Col
-                md={4}
+                md={4}  sm={6} xs={12} 
                 className="d-flex flex-column px-5 my-5 box"
               >
                 <img src={Akansha} width={200}></img>

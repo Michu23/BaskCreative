@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5915dd8e.css",
-    "main.js": "/static/js/main.edba2947.js",
+    "main.css": "/static/css/main.743d88b6.css",
+    "main.js": "/static/js/main.4620fa33.js",
     "static/js/787.a41db4f1.chunk.js": "/static/js/787.a41db4f1.chunk.js",
     "static/media/Vishaka.jpg": "/static/media/Vishaka.6b561b6f394c6786f278.jpg",
     "static/media/Sasi.jpg": "/static/media/Sasi.b4d88662472fb70025f7.jpg",
@@ -10,6 +10,7 @@
     "static/media/Prabhakar.jpg": "/static/media/Prabhakar.33f3f90138b89ac9c77e.jpg",
     "static/media/Akansha.jpg": "/static/media/Akansha.70a32a3c8dcdfb938696.jpg",
     "static/media/Sampath.jpg": "/static/media/Sampath.941ae5b6b5487f8c462b.jpg",
+    "static/media/L2.png": "/static/media/L2.79ec5468a7930aeaad0c.png",
     "static/media/Tanmay.jpg": "/static/media/Tanmay.4a502f09343bf5570ea4.jpg",
     "static/media/Nisal.jpg": "/static/media/Nisal.02e676af053433484d97.jpg",
     "static/media/powering-brands.svg": "/static/media/powering-brands.c261800742122aee3730fcd681eb2b13.svg",
@@ -23,12 +24,12 @@
     "index.html": "/index.html",
     "static/media/arrow-up.svg": "/static/media/arrow-up.97aabb41956bfd3d24ec.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.9d06f994adb95d870ca2.svg",
-    "main.5915dd8e.css.map": "/static/css/main.5915dd8e.css.map",
-    "main.edba2947.js.map": "/static/js/main.edba2947.js.map",
+    "main.743d88b6.css.map": "/static/css/main.743d88b6.css.map",
+    "main.4620fa33.js.map": "/static/js/main.4620fa33.js.map",
     "787.a41db4f1.chunk.js.map": "/static/js/787.a41db4f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5915dd8e.css",
-    "static/js/main.edba2947.js"
+    "static/css/main.743d88b6.css",
+    "static/js/main.4620fa33.js"
   ]
 }
