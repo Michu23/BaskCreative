@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Weare from './whoweare.svg'
+import Quote from './quote.jpg'
 
 
 const WeAree = () => {
@@ -60,11 +61,12 @@ const WeAree = () => {
           
         </Row>
         
+        
         <div className="quote px-2">
           <p className="subheading yy">
             <b>Our spirit</b>
           </p>
-          <p
+          {/* <p
             className="heading2 ww"
             data-aos="fade-up"
             data-aos-delay="50"
@@ -91,9 +93,15 @@ const WeAree = () => {
             data-aos-easing="ease-in-out-cubic"
           >
             every day.’
-          </p>
+          </p> */}
+          <img
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out-cubic"
+          src={Quote} alt="" className="img-fluid" />
           <div className="d-flex justify-content-end">
-            <p className="subheading2 yy">- Warren Buffett</p>
+            {/* <p className="subheading2 yy">- Warren Buffett</p> */}
           </div>
         </div>
 

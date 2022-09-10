@@ -28,14 +28,14 @@ const Team = () => {
                 <p className="text-white">Founder and CEO</p>
                 <br />
                 <p className="text-white">
-                  Sampath has varied experience in working with some of the
+                  {/* Sampath has varied experience in working with some of the
                   finest creative agencies in India including Enterprise
                   Advertising, Ambience, JWT and Contract. Over a career
                   spanning 30 years he has worked on many multi-national as well
                   as leading Indian Brands. The last 15 years he has been
                   creating and helming his own ventures including start-ups in
                   the charity and food & beverages space. With Black, his latest
-                  venture, he is fashioning the agency of his dreams.
+                  venture, he is fashioning the agency of his dreams. */}
                 </p>
               </Col>
               <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box">
@@ -45,7 +45,7 @@ const Team = () => {
                 <br />
 
                 <p className="text-white h-100">
-                  Prabhakaran is the consummate advertising andmarketing
+                  {/* Prabhakaran is the consummate advertising andmarketing
                   professional. With 3 decades of experience both on the agency
                   side as well as the brand side. He has worked with some of the
                   leading advertising agencies in Bangalore including Saatchi
@@ -54,7 +54,7 @@ const Team = () => {
                   categories. Later he moved on to work on the brand side with
                   RMZ Corp, Bangalore's leading Corporate and Residential
                   developer, for 10 years as head of marketing communication for
-                  both, RMZ Homes and Commercial spaces.
+                  both, RMZ Homes and Commercial spaces. */}
                 </p>
               </Col>
               <Col
@@ -67,7 +67,7 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Pramod Rangari has evolved over the last 30 years from being a
+                  {/* Pramod Rangari has evolved over the last 30 years from being a
                   pure play advertising art director to being the design guru
                   that he is today. His work has spanned advertising campaigns
                   and design work for a host of national and international
@@ -78,7 +78,7 @@ const Team = () => {
                   creative agencies like Ambience and Enterprise at the start of
                   his career and then moved on to Lowe-Lintas before being
                   called by Ogilvy to set up and head their India Design
-                  Division.
+                  Division. */}
                 </p>
               </Col>
 
@@ -93,7 +93,7 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Sonica has a hawk’s eye when it comes to execution details.
+                  {/* Sonica has a hawk’s eye when it comes to execution details.
                   But that doesn't take anything away from the strategic vision
                   that she brings to the table. Campaigns, Performance
                   Marketing, Content Strategy, Social Media Strategy, SEO
@@ -106,7 +106,7 @@ const Team = () => {
                   estate, technology, non-profit organisations, and many others.
                   Before she dived headlong into the digital world she had
                   various sales and marketing roles with Taj Hotels, ITC Hotels,
-                  The Ritz-Carlton Hotel Company and Accor Hotels .
+                  The Ritz-Carlton Hotel Company and Accor Hotels . */}
                 </p>
               </Col>
               <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box ">
@@ -118,7 +118,7 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Tanmay not only comes with all the right qualifications but
+                  {/* Tanmay not only comes with all the right qualifications but
                   also loves solving problems, especially those related to
                   marketing and business strategy. He is that perfect,
                   passionate, marketing guy a creative agency falls in love
@@ -133,7 +133,7 @@ const Team = () => {
                   University of Kolkata. Tanmay is a self-starter and has a
                   spark in his eyes when he talks about marketing (maybe it has
                   something to do with his long stints at automotive battery
-                  companies).
+                  companies). */}
                 </p>
               </Col>
               <Col md={4}  sm={6} xs={12}  className="d-flex  flex-column px-5 my-5 box ">
@@ -145,7 +145,7 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Nisal has been there, done that. His down-to-earth demeanour
+                  {/* Nisal has been there, done that. His down-to-earth demeanour
                   and can-do attitude carry the day. For over 20 years, he has
                   been the man companies reached out to implement retail
                   strategies across the country. His experiences range from
@@ -157,7 +157,7 @@ const Team = () => {
                   ITC. And conceptualized and implemented the ‘All Steel’ Store
                   in  Kolkata for the Tata Group. He will lead  Bask’s work in
                   the retail space, devising strategies and implementing retail
-                  experiences across domains.
+                  experiences across domains. */}
                 </p>
               </Col>
               <Col
@@ -170,14 +170,14 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Sasi is a sculptor turned digital artist- turned magazine
+                  {/* Sasi is a sculptor turned digital artist- turned magazine
                   designer-turned advertising art director. Sasi brings a keen
                   eye for aesthetically pleasing designs and at the same time
                   creates pieces of work that are meaningful and interesting in
                   their depth, creating vibrant geographical contours across the
                   advertising landscape. Basically, work that stand-out in a sea
                   of sameness. Sasi’s work talks for itself, that’s probably why
-                  you will find him to be a man of few words.
+                  you will find him to be a man of few words. */}
                 </p>
               </Col>
               <Col md={4}  sm={6} xs={12}  className="d-flex flex-column px-5 my-5 box">
@@ -187,12 +187,12 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  Vishakha is well travelled, having held jobs in different
+                  {/* Vishakha is well travelled, having held jobs in different
                   parts of the world before she ended up at Bask. Her last job
                   was at a logistics company in New York, managing operations
                   across a wide-spectrum of clients. She now realizes that was
                   child’s play compared to handling deliverables at an ad
-                  agency.
+                  agency. */}
                 </p>
               </Col>
 
@@ -208,10 +208,10 @@ const Team = () => {
                 <br />
 
                 <p className="text-white">
-                  An experimental art-director with a spiritual bent of mind,
+                  {/* An experimental art-director with a spiritual bent of mind,
                   she somehow believes Bask is going to help open her third-eye.
                   We are not sure about that, but her designs are sure to open
-                  your eyes.
+                  your eyes. */}
                 </p>
               </Col>
             </Row>

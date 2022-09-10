@@ -18,11 +18,8 @@
  }
 
  .maintitle{
-  
   align-items: center;
   padding-top: 200px !important;
-  
-  
  }
 
 
@@ -86,7 +83,6 @@
 }
 
 .subtitle{
-  /* font-size: 7rem; */
   font-size: var(--fs-lg) !important;
   color: var(--white);
   font-family: 'Proxima Nova', sans-serif;
@@ -102,9 +98,9 @@
   overflow-y: scroll;
 }
 
-.y.mandatory-scroll-snapping {
+/* .y.mandatory-scroll-snapping {
   scroll-snap-type: y mandatory;
-}
+} */
 
 
 section{
@@ -112,10 +108,6 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* scroll-snap-align: start;
-  max-width: 1200px !important;
-  float: right !important; */
 
 }
 
