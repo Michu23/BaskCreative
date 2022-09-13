@@ -35,8 +35,15 @@ const Second = () => {
             {/* </div> */}
            
 
-            <div className="container">
-              <p className="description  px-2 fr  mx-2">
+            <div className="container"
+             
+            >
+              <p className="description  px-2 fr  mx-2"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out-cubic"
+              >
                 Being creative begins with a great strategy. Without a great
                 strategy, there’s no great creativity. You will see that every
                 great campaign ever, every great brand that was ever created all

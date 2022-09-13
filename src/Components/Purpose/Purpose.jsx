@@ -6,24 +6,7 @@ const Purpose = () => {
   return (
     <section className="purpose-driven mt-5">
           <div className="purpose">
-            {/* <p
-              className="heading22 ww  "
-              data-aos="fade-right"
-              data-aos-delay="50"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-cubic"
-            >
-              Purpose
-            </p>
-            <p
-              className="heading22"
-              data-aos="fade-right"
-              data-aos-delay="50"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-cubic"
-            >
-              -driven
-            </p> */}
+            
             <img src={Driven} alt="" className='logo3'
             data-aos="fade-up"
             data-aos-delay="50"
@@ -36,10 +19,20 @@ const Purpose = () => {
               
             
             <div className="container prps">
-              <p className="subheading ms-2 ">
+              <p className="subheading ms-2 "
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out-cubic"
+              >
                 Purpose-The framework behind every great brand.
               </p>
-              <p className="description3  px-2  mx-2">
+              <p className="description3  px-2  mx-2"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out-cubic"
+              >
                 We believe we are not separate, but one. Everything that we do
                 stems from the awareness that whatever affects everyone affects
                 us too. So we try to infuse purpose into every brand we work

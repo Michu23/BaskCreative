@@ -1,29 +1,27 @@
 import React from "react";
 
 import Baskk from "./baskcreativeagency.svg";
-import Logo from "./L2.png";
+// import Logo2 from "./BaskLogo2.svg";
+import Logo2 from "./Logo3.svg";
+
 
 const Bask = () => {
   return (
     <section
-      className="maintitle"
-      data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="2000"
-      data-aos-easing="ease-in-out-cubic"
+    
     >
       <div
-        className="maincontent first container-fluid"
+        className="container-fluid"
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
         
-        <img src={Logo} className="logo" alt="" />
+        <img src={Logo2} className="logo" alt="" />
       </div>
       <div className="container px-2" data-aos="fade-up">
-        <p className="description  px-2  mx-1 fr">
+        <p className="description22  px-2  mx-1 fr">
           Bask in the bright lights of fame. Be the brand that everyone wants.
           Be desired. Be admired. Be possessed. We will do everything that’s
           required to put your brand in the limelight. And be made

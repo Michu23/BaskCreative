@@ -6,8 +6,8 @@ const NavIcon = () => {
   return (
     <>
     
-        <div class="nav-icon">
-            <div class="hamburger-bar"></div>
+        <div className="nav-icon">
+            <div className="hamburger-bar"></div>
         </div>
     
     </>

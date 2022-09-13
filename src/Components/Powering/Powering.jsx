@@ -5,7 +5,7 @@ import Power from "./powering-brands.svg";
 
 const Powering = () => {
   return (
-    <section>
+    <section className="bgg">
     <div>
       <div
         className="maincontent"
@@ -32,7 +32,12 @@ const Powering = () => {
       <br />
 
       <div className="container">
-        <p className="description  px-2  mx-2 fr">
+        <p className="description  px-2  mx-2 fr"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-cubic"
+        >
           Every brand has access to analytics. When you infuse creative
           thinking into this, you unleash insights that have the power to
           move markets. If your brand needs an infusion of creativity,
@@ -46,7 +51,12 @@ const Powering = () => {
       <br />
       <br />
     </div>
-        <Row>
+        <Row 
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-cubic"
+        >
           <Col md={4} className="px-2"
           data-aos="fade-up"
           data-aos-delay="250"

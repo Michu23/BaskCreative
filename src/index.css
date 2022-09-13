@@ -20,3 +20,19 @@ body{
   --yellow: #fee600;
   --white: #ffffff;
 }
+
+.bgg{
+  background-color: var(--grey) !important;
+}
+
+.textgrey{
+  color: var(--grey) !important;
+}
+
+.bigtitle{
+  font-size: clamp(5rem, 8vw, 10rem) !important;
+  /* font-size: 500% !important; */
+  width: fit-content !important;
+  font-family: "gilroy-bold" !important;
+  
+}
