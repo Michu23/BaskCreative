@@ -19,7 +19,7 @@ const Team = () => {
       <img src={Heading} alt="" className="img-fluid mb-3 mt-5" />
 
       <div className="container">
-        <Row className="mx-2">
+        <Row className="px-2">
           <Col md={5}></Col>
           <Col md={7}>
             <Row className="mx-2">

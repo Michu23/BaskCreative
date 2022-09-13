@@ -74,7 +74,7 @@ const Home = () => {
         <NavIcon />
       </Link>
       <Container fluid className="bgg">
-        <Container className="mx-2 pe-3 ">
+        <Container className="px-2 pe-3 ">
           <div className="p-0 m-0 ">
             <Row>
               <Col md={1}></Col>
@@ -104,7 +104,7 @@ const Home = () => {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out-cubic"
                   >
-                    <img src={peeps} alt="" className="w-75 pb-5" />
+                    <img src={peeps} alt="" className=" pb-5 img-fluid" />
                   </div>
                   <Row className="">
                     <Col md={1} className=""></Col>
@@ -113,7 +113,7 @@ const Home = () => {
                         <Row className=" ">
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -124,7 +124,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -135,7 +135,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -146,7 +146,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -157,7 +157,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -168,7 +168,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -179,7 +179,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -190,7 +190,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -201,7 +201,7 @@ const Home = () => {
                           </Col>
                           <Col
                             md={4}
-                            xs={12}
+                            xs={6}
                             className="does  p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
@@ -242,7 +242,7 @@ const Home = () => {
           }}
         ></Container>
 
-        <Container fluid className="mx-2 pe-3  " style={{ minHeight: "500px" }}>
+        <Container fluid className="px-2 pe-3  " style={{ minHeight: "500px" }}>
           <Row>
             <Col md={1} className=""></Col>
             <Col md={11} className="">

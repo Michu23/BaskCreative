@@ -4,6 +4,11 @@
   max-height: fit-content;
 }
 
+html{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 @import url("http://fonts.cdnfonts.com/css/gilroy-bold");
 @import url("http://fonts.cdnfonts.com/css/gilroy-light");
 
