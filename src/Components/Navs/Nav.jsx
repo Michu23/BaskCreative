@@ -14,7 +14,8 @@ const Nav = () => {
     <Link to="/">
         <NavIcon/>
     </Link>
-        <Container className='navspage'>
+        <Container fluid className="p-0 m-0 bgg"> 
+        <Container className='navspage bgg'>
             
             <Row>   
             <section className="navs">
@@ -38,7 +39,7 @@ const Nav = () => {
                         },)  
                     }}
                   >
-                    who we are
+                    Who we are
                   </p>
                 
                 <a href="#wedo">
@@ -55,7 +56,7 @@ const Nav = () => {
                         }, 3000)  
                     }}
                   >
-                    what we do
+                    What we do
                   </p>
                 </a>
 
@@ -74,7 +75,25 @@ const Nav = () => {
                       },)  
                   }}
                   >
-                    work
+                    Our Works
+                  </p>
+                </a>
+                <a href="#work">
+                 
+                  <p
+                    className="cp work"
+                    data-aos="fade-right"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-cubic"
+                    onClick={() => {
+                      navigate('/')
+                      setTimeout(() => {
+                          document.getElementById("work").scrollIntoView();
+                      },)  
+                  }}
+                  >
+                    Our People
                   </p>
                 </a>
               </div>
@@ -82,6 +101,7 @@ const Nav = () => {
           </div>
         </section>
             </Row>
+        </Container>
         </Container>
     </>
   )

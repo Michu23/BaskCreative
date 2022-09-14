@@ -29,6 +29,8 @@ import ddd from "./whatwedo_edited.svg";
 import stbg from "./stbg.svg";
 
 import peeps from "./dooo.svg";
+import Video from "../Components/Works/VegSeq.mp4";
+
 
 Aos.init();
 
@@ -222,9 +224,8 @@ const Home = () => {
       </Container>
       <Container
         fluid
-        className="p-0 m-0 bgy stbg position-relative"
+        className="p-0 m-0 bgy stbg2 position-relative"
         style={{
-         
           height: "fit-content",
         }}
       >
@@ -236,13 +237,19 @@ const Home = () => {
             backgroundSize: "cover",
             zIndex: "1",
 
-            // backgroundRepeat: "no-repeat",
-            // backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
             backgroundAttachment: "fixed",
           }}
         ></Container>
 
-        <Container fluid className="px-2 pe-3  " style={{ minHeight: "500px" }}>
+        <Container fluid className="px-2 pe-3 position-relative " style={{ minHeight: "500px",
+        overflow: "hidden",}}>
+    
+          <video
+          src={Video}
+          className="bnw w-75 position-absolute"
+          autoPlay muted loop />
           <Row>
             <Col md={1} className=""></Col>
             <Col md={11} className="">
@@ -285,7 +292,7 @@ const Home = () => {
         </Container>
       </Container>
 
-      <Works />
+      {/* <Works /> */}
       <Container fluid className="p-0 m-0 bgg">
         <Container className="mx-2 pe-3 ">
           <div className="p-0 m-0 ">

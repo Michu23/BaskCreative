@@ -9,6 +9,16 @@ html{
   padding: 0 !important;
 }
 
+.bnw{
+  filter: grayscale(100%) !important;
+  opacity: 0.7 !important;
+}
+
+.bnw2{
+  filter: grayscale(100%) !important;
+  opacity: 0.9 !important;
+}
+
 @import url("http://fonts.cdnfonts.com/css/gilroy-bold");
 @import url("http://fonts.cdnfonts.com/css/gilroy-light");
 
@@ -59,7 +69,8 @@ body::-webkit-scrollbar {
     height: fit-content !important;
     background: 
        url(https://ik.imagekit.io/Michu/BlackBox/Edited_Swirl-01_s9Co-BvB_.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663048402145) left top no-repeat,  
-       url("") right top no-repeat,   
+       url("") right 200px no-repeat,   
+       url("") right 400px no-repeat,   
        url(https://ik.imagekit.io/Michu/BlackBox/Edited_Swirl-01_s9Co-BvB_.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663048402145) left bottom no-repeat,     
        url("") right bottom no-repeat; 
 }
@@ -361,7 +372,7 @@ section {
 }
 
 .stbg{
-  background-color: black !important;
+  background-color: var(--yellow) !important;
 }
 
 .hamburger-bar:before {

@@ -5,20 +5,39 @@ import Img from "./1.jpeg";
 import HoverVideoPlayer from "react-hover-video-player";
 import Video from "./VegSeq.mp4";
 import Www from "./www.svg";
+import ProgressBar from "react-progressbar-on-scroll";
+import { Link } from "react-router-dom";
+import NavIcon from "../NavIcon";
+import Two from "./2.jpeg";
+import Three from "./3.jpeg";
+import Four from "./4.jpeg";
+import L1 from "./L1.jpg";
+import L2 from "./L2.jpg";
+import L3 from "./L3.jpg";
+import Contact from "../../Pages/Contact";
+
 
 const Works = () => {
   return (
     <>
+    <ProgressBar color="#fee600" height={10} />
+      <Link to="/navs">
+        <NavIcon />
+      </Link>
       <Container fluid className=" m-0 p-0 bgg">
        
         <Container className="px-2 py-5 pe-3">
           <div>
             <Row>
               <Col md={1}></Col>
-              <Col md={11}>
-                <HoverVideoPlayer
+              <Col md={11} className="position-relative">
+                <img src={Www} alt="" className="w-100 position-absolute " 
+                style={{zIndex : "888"}} />
+                
+                <div className="bnw">
+                   {/* <HoverVideoPlayer
                   videoSrc={Video}
-                  className="img-fluid "
+                  className="img-fluid bnw"
                   pausedOverlay={
                     <img
                       src={Www}
@@ -31,18 +50,27 @@ const Works = () => {
                         alignItems: "center",
                       }}
                     />
-                    // <div style={{
-                    //   width: "100%",
-                    //   height: "100%",
-                    //   backgroundColor: "#4b5360",
-                    // }}></div>
+                    <div style={{
+                      width: "100%",
+                      height: "100%",
+                      backgroundColor: "#4b5360",
+                    }}></div>
                   }
                   loadingOverlay={
                     <div className="loading-overlay">
                       <div className="loading-spinner" />
                     </div>
                   }
+                /> */}
+                <video src={Video} 
+                className="img-fluid bnw"
+                autoPlay
+                loop
+                muted
                 />
+                
+                </div>
+               
               </Col>
             </Row>
           </div>
@@ -64,18 +92,18 @@ const Works = () => {
               <Col md={11}>
                 <div className="text-white">
                   <Row className="w-100">
-                    <Col xs={12}>
+                    <Col xs={12} className="mb-5">
                       Client: <b>Zlate</b>
                     </Col>
                     <Col
                       md={6}
-                      className="d-flex justify-content-center align-items-center"
+                      className="d-flex justify-content-center align-items-center "
                       data-aos="fade-right"
                       data-aos-delay="300"
                       data-aos-duration="1000"
                       data-aos-easing="ease-in-out-cubic"
                     >
-                      <p className="description w-50">
+                      <p className="description w-50 ">
                         We were tasked with communicating the power of
                         negotiating using the AI capabilities of the Zlate
                         platform. We did what we do best and took a contrarian
@@ -90,7 +118,40 @@ const Works = () => {
                       data-aos-duration="1000"
                       data-aos-easing="ease-in-out-cubic"
                     >
-                      <img src={Img} className="img-fluid h-75 " />
+                      <Row>
+                        <Col md={6}>
+                          <img src={Img} alt="" className="img-fluid p-2" 
+                          data-aos="fade-left"
+                          data-aos-delay="300"
+                          data-aos-duration="1000"
+                          data-aos-easing="ease-in-out-cubic"
+                          />
+                        </Col>
+                        <Col md={6}>
+                          <img src={Two} alt="" className="img-fluid p-2" 
+                          data-aos="fade-left"
+                          data-aos-delay="300"
+                          data-aos-duration="1000"
+                          data-aos-easing="ease-in-out-cubic"
+                          />
+                        </Col>
+                        <Col md={6}>
+                          <img src={Three} alt="" className="img-fluid p-2" 
+                          data-aos="fade-left"
+                          data-aos-delay="300"
+                          data-aos-duration="1000"
+                          data-aos-easing="ease-in-out-cubic"
+                          />
+                        </Col>
+                        <Col md={6}>
+                          <img src={Four} alt="" className="img-fluid p-2" 
+                          data-aos="fade-left"
+                          data-aos-delay="300"
+                          data-aos-duration="1000"
+                          data-aos-easing="ease-in-out-cubic"
+                          />
+                        </Col>
+                      </Row>
                     </Col>
                   </Row>
                 </div>
@@ -98,6 +159,9 @@ const Works = () => {
             </Row>
           </Container>
         </Container>
+        <div style={{
+          height: "140px",
+        }}></div>
         <Container fluid className="m-0  p-0">
           <div>
             <hr
@@ -114,20 +178,47 @@ const Works = () => {
                 <div className="text-white">
                   <Row>
                     <Col xs={12}>
-                      Client: <b>Zlate</b>
+                      Client: <b>LakeFront</b>
                     </Col>
                     <Col
                       md={6}
-                      className="d-flex justify-content-center align-items-center"
+                      className="d-flex justify-content-center align-items-center pt-5"
                     >
-                      <img
-                        src={Img}
+                      <Row>
+                        <Col md={6}>
+                        <img
+                        src={L1}
                         className="img-fluid h-75 "
                         data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
                       />
+                        </Col>
+                        <Col md={6}>
+                        <img
+                        src={L2}
+                        className="img-fluid h-75 "
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                      />
+
+                        </Col>
+                        <Col md={6}>
+                        <img
+                        src={L3}
+                        className="img-fluid h-75 "
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                      />
+                      </Col>
+                       
+
+                      </Row>
                     </Col>
                     <Col md={6}
                     className="d-flex justify-content-center align-items-center"
@@ -140,10 +231,7 @@ const Works = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
                       >
-                        We were tasked with communicating the power of
-                        negotiating using the AI capabilities of the Zlate
-                        platform. We did what we do best and took a contrarian
-                        approach with our tagline ‘ Settle for less.’
+                        When there is a beautiful lake near the residential property we are creating ads for, the campaign more or less writes  itself.
                       </p>
                     </Col>
                   </Row>
@@ -152,7 +240,7 @@ const Works = () => {
             </Row>
           </Container>
         </Container>
-        <Container fluid className="m-0  p-0">
+        {/* <Container fluid className="m-0  p-0">
           <div>
             <hr
               style={{
@@ -203,8 +291,9 @@ const Works = () => {
               </Col>
             </Row>
           </Container>
-        </Container>
+        </Container> */}
       </div>
+      <Contact/>
     </>
   );
 };

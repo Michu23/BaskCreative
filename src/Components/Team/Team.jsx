@@ -15,8 +15,8 @@ import Heading from "./People.svg";
 
 const Team = () => {
   return (
-    <section className="container-fluid w-100 mt-5 py-5" id="work">
-      <img src={Heading} alt="" className="img-fluid mb-3 mt-5" />
+    <section className="container-fluid w-100  py-5 bgg" id="work">
+      <img src={Heading} alt="" className="img-fluid mb-3 pt-5 mt-5" />
 
       <div className="container">
         <Row className="px-2">

@@ -15,6 +15,8 @@ import Prabhakar from "./Components/Team/Details/Prabhakar";
 import Sonica from "./Components/Team/Details/Sonica";
 import Pramoda from "./Components/Team/Details/Pramoda";
 import Tanmay from "./Components/Team/Details/Tanmay";
+import Works from "./Components/Works/Works";
+import Team from "./Components/Team/Team";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/navs" element={<Nav />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/people" element={<Team />} />
           <Route path="/" element={<Home />} />
           <Route path="/akansha" element={<Akansha />} />
           <Route path="/sampath" element={<Sampath />} />

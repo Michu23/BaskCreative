@@ -31,7 +31,7 @@ const Powering = () => {
       <br />
       <br />
 
-      <div className="container">
+      {/* <div className="container">
         <p className="description  px-2  mx-2 fr"
         data-aos="fade-up"
         data-aos-delay="50"
@@ -47,11 +47,11 @@ const Powering = () => {
 
         <br />
         <br />
-      </div>
+      </div> */}
       <br />
       <br />
     </div>
-        <Row 
+        {/* <Row 
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -107,7 +107,7 @@ const Powering = () => {
               execute it till it transforms into something even bigger.
             </p>
           </Col>
-        </Row>
+        </Row> */}
   </section>
   )
 }
