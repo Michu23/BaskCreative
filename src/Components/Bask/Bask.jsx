@@ -6,7 +6,7 @@ import Logo2 from "./Logo3.svg";
 
 const Bask = () => {
   return (
-    <section>
+    <div className="">
       <div
         className="container-fluid"
         data-aos="fade-up"
@@ -30,7 +30,7 @@ const Bask = () => {
           revolution.
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 

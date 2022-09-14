@@ -9,7 +9,7 @@ const WeAree = () => {
   return (
     <>
       <Container fluid className=" m-0 p-0 bgg ">
-        <Container className="mx-2 pt-5 pe-3 ">
+        <Container className="px-2 pt-5 pe-3 ">
           <div>
             <Row className="bottom-0">
               <Col md={1}></Col>
@@ -22,7 +22,7 @@ const WeAree = () => {
         </Container>
       </Container>
       <Container fluid className=" m-0 p-0 bgy">
-        <Container className="mx-2 pb-5 pe-3">
+        <Container className="px-2 pb-5 pe-3">
           <div>
             <Row>
               <Col md={1}></Col>

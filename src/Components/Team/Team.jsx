@@ -18,13 +18,13 @@ import Contact from "../../Pages/Contact";
 
 const Team = () => {
   return (
-    <>
+    <div className="m-0 p-0">
     <ProgressBar color="#fee600" height={10} />
       <Link to="/navs">
         <NavIcon />
       </Link>
     <Container fluid className="p-0 m-0 bgg">
-      <Container className="mx-2 pe-3 ">
+      <Container className=" pe-3 ">
         <div className="p-0 m-0 ">
           <Row>
             <Col md={1}></Col>
@@ -218,7 +218,7 @@ const Team = () => {
     <Contact />
 
     
-    </>
+    </div>
   );
 };
 

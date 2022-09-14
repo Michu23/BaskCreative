@@ -33,7 +33,6 @@ import peeps from "./dooo.svg";
 import Video from "../Components/Works/VegSeq.mp4";
 import Contact from "./Contact";
 
-
 Aos.init();
 
 const handleSubmit = (e) => {
@@ -73,11 +72,17 @@ const handleSubmit = (e) => {
 const Home = () => {
   return (
     <>
-      <ProgressBar color="#fee600" height={10} />
+      {/* <ProgressBar color="#fee600" height={10} className="w-100" /> */}
       <Link to="/navs">
         <NavIcon />
       </Link>
-      <Container fluid className="bgg">
+      <Container
+        fluid
+        className="bgg"
+        style={{
+          overflowY: "hidden",
+        }}
+      >
         <Container className="px-2 pe-3 ">
           <div className="p-0 m-0 ">
             <Row>
@@ -294,39 +299,41 @@ const Home = () => {
         </Container>
       </Container> */}
       <Container fluid className=" m-0 p-0 bgg">
-       <Link to="/works">
-        <Container className="px-2 py-5 pe-3 cp">
-         <div>
-           <Row>
-             <Col md={1}></Col>
-             <Col md={11} className="position-relative hovs"
-             style={{
-              maxWidth: "1000px",
-            }}
-             >
-               <img src={Www} alt="" className="w-75 position-absolute " 
-               style={{zIndex : "888"}} />
-               
-               <div className="bnw">
-                  
-               <video src={Video} 
-               className="img-fluid bnw"
-               autoPlay
-               loop
-               muted
-               />
-               
-               </div>
-              
-             </Col>
-           </Row>
-         </div>
-       </Container>
-       </Link>
-      
-     </Container>
+        <Link to="/works">
+          <Container className="px-2 py-5 pe-3 cp">
+            <div>
+              <Row>
+                <Col md={1}></Col>
+                <Col
+                  md={11}
+                  className="position-relative hovs"
+                  style={{
+                    maxWidth: "1000px",
+                  }}
+                >
+                  <img
+                    src={Www}
+                    alt=""
+                    className="w-75 position-absolute "
+                    style={{ zIndex: "888" }}
+                  />
 
-    
+                  <div className="bnw">
+                    <video
+                      src={Video}
+                      className="img-fluid bnw"
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </Link>
+      </Container>
+
       <Container fluid className="p-0 m-0 bgg">
         <Container className="mx-2 pe-3 ">
           <div className="p-0 m-0 ">
@@ -437,13 +444,12 @@ const Home = () => {
                     </Row>
                   </div>
                 </section> */}
-                  
               </Col>
             </Row>
           </div>
         </Container>
       </Container>
-      <Contact/>
+      <Contact />
     </>
   );
 };
