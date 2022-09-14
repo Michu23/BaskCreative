@@ -60,7 +60,8 @@ const Nav = () => {
                   </p>
                 </a>
 
-                <a href="#work">
+                {/* <a href="#work"> */}
+                <Link to="/works">
                  
                   <p
                     className="cp work"
@@ -77,11 +78,14 @@ const Nav = () => {
                   >
                     Our Works
                   </p>
-                </a>
-                <a href="#work">
+                </Link>
+                {/* </a> */}
+                {/* <a href="#work"> */}
+
+                <Link to="/people">
                  
                   <p
-                    className="cp work"
+                    className="cp  peepz"
                     data-aos="fade-right"
                     data-aos-delay="500"
                     data-aos-duration="1000"
@@ -95,7 +99,8 @@ const Nav = () => {
                   >
                     Our People
                   </p>
-                </a>
+                </Link>
+                {/* </a> */}
               </div>
             </div>
           </div>

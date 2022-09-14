@@ -10,12 +10,25 @@ import Akansha from "./Akansha.jpg";
 import Nisal from "./Nisal.jpg";
 import Tanmay from "./Tanmay.jpg";
 import Person from "./Person";
-
+import ProgressBar from "react-progressbar-on-scroll";
 import Heading from "./People.svg";
+import NavIcon from "../NavIcon";
+import { Link } from "react-router-dom";
+import Contact from "../../Pages/Contact";
 
 const Team = () => {
   return (
-    <section className="container-fluid w-100  py-5 bgg" id="work">
+    <>
+    <ProgressBar color="#fee600" height={10} />
+      <Link to="/navs">
+        <NavIcon />
+      </Link>
+    <Container fluid className="p-0 m-0 bgg">
+      <Container className="mx-2 pe-3 ">
+        <div className="p-0 m-0 ">
+          <Row>
+            <Col md={1}></Col>
+            <Col md={11}><section className="container-fluid w-100  py-5 bgg" id="work">
       <img src={Heading} alt="" className="img-fluid mb-3 pt-5 mt-5" />
 
       <div className="container">
@@ -197,6 +210,15 @@ const Team = () => {
         </Row>
       </div>
     </section>
+              </Col>
+          </Row>
+        </div>
+      </Container>
+    </Container>
+    <Contact />
+
+    
+    </>
   );
 };
 

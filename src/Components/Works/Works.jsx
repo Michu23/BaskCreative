@@ -15,6 +15,7 @@ import L1 from "./L1.jpg";
 import L2 from "./L2.jpg";
 import L3 from "./L3.jpg";
 import Contact from "../../Pages/Contact";
+import Img2 from "./Img";
 
 
 const Works = () => {
@@ -119,37 +120,50 @@ const Works = () => {
                       data-aos-easing="ease-in-out-cubic"
                     >
                       <Row>
-                        <Col md={6}>
-                          <img src={Img} alt="" className="img-fluid p-2" 
-                          data-aos="fade-left"
+                        <Col md={6}
+                        
+                        data-aos="fade-left"
                           data-aos-delay="300"
                           data-aos-duration="1000"
                           data-aos-easing="ease-in-out-cubic"
-                          />
+                          >
+                          {/* <img src={Img} alt="" className="img-fluid p-2" 
+                          
+                          /> */}
+                          <Img2 image={Img} />
                         </Col>
-                        <Col md={6}>
-                          <img src={Two} alt="" className="img-fluid p-2" 
-                          data-aos="fade-left"
-                          data-aos-delay="300"
-                          data-aos-duration="1000"
-                          data-aos-easing="ease-in-out-cubic"
-                          />
+                        <Col md={6}
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                        >
+                          {/* <img src={Two} alt="" className="img-fluid p-2" 
+                          
+                          /> */}
+                          <Img2 image={Two} />
                         </Col>
-                        <Col md={6}>
-                          <img src={Three} alt="" className="img-fluid p-2" 
-                          data-aos="fade-left"
-                          data-aos-delay="300"
-                          data-aos-duration="1000"
-                          data-aos-easing="ease-in-out-cubic"
-                          />
+                        <Col md={6}
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                        >
+                          {/* <img src={Three} alt="" className="img-fluid p-2" 
+                          
+                          /> */}
+                          <Img2 image={Three} />
                         </Col>
-                        <Col md={6}>
-                          <img src={Four} alt="" className="img-fluid p-2" 
-                          data-aos="fade-left"
-                          data-aos-delay="300"
-                          data-aos-duration="1000"
-                          data-aos-easing="ease-in-out-cubic"
-                          />
+                        <Col md={6}
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                        >
+                          {/* <img src={Four} alt="" className="img-fluid p-2" 
+                          
+                          /> */}
+                          <Img2 image={Four} />
                         </Col>
                       </Row>
                     </Col>
@@ -185,36 +199,46 @@ const Works = () => {
                       className="d-flex justify-content-center align-items-center pt-5"
                     >
                       <Row>
-                        <Col md={6}>
-                        <img
+                        <Col md={6}
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out-cubic"
+                        >
+                          
+                        {/* <img
                         src={L1}
                         className="img-fluid h-75 "
+                        
+                      /> */}
+                      <Img2 image={L1} />
+                        </Col>
+                        <Col md={6}
                         data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
-                      />
-                        </Col>
-                        <Col md={6}>
-                        <img
+                        >
+                        {/* <img
                         src={L2}
                         className="img-fluid h-75 "
-                        data-aos="fade-right"
-                        data-aos-delay="300"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out-cubic"
-                      />
+                        
+                      /> */}
+                      <Img2 image={L2} />
 
                         </Col>
-                        <Col md={6}>
-                        <img
-                        src={L3}
-                        className="img-fluid h-75 "
+                        <Col md={6}
                         data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
-                      />
+                        >
+                        {/* <img
+                        src={L3}
+                        className="img-fluid h-75 "
+                        
+                      /> */}
+                      <Img2 image={L3} />
                       </Col>
                        
 

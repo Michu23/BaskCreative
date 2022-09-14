@@ -224,7 +224,7 @@ const Home = () => {
       </Container>
       <Container
         fluid
-        className="p-0 m-0 bgy stbg2 position-relative"
+        className="p-0 m-0 bgy stbg position-relative"
         style={{
           height: "fit-content",
         }}
@@ -248,7 +248,7 @@ const Home = () => {
     
           <video
           src={Video}
-          className="bnw w-75 position-absolute"
+          className="bnw2 w-75 position-absolute"
           autoPlay muted loop />
           <Row>
             <Col md={1} className=""></Col>
@@ -303,7 +303,7 @@ const Home = () => {
                 {/* <Purpose /> */}
                 <Powering />
 
-                <Team />
+                {/* <Team /> */}
 
                 <section>
                   <div className="yy mb-5">

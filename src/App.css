@@ -335,6 +335,14 @@ section {
   color: #fff !important;
 }
 
+.peepz:hover {
+  color: #fee600 !important;
+}
+
+.peepz {
+  color: #fff !important;
+}
+
 .bgy {
   background-color: var(--yellow);
 }
@@ -369,6 +377,10 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   /* background: var(--grey) !important; */
+}
+
+.css-twia2z-MuiPaper-root-MuiDialog-paper{
+  overflow-y:  hidden !important;
 }
 
 .stbg{

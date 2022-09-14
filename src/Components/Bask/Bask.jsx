@@ -20,8 +20,13 @@ const Bask = () => {
         
         <img src={Logo2} className="logo" alt="" />
       </div>
-      <div className="container px-2" data-aos="fade-up">
-        <p className="description22  px-2  mx-1 fr">
+      <div className="container px-2" >
+        <p className="description22  px-2  mx-1 fr"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-cubic"
+        >
           Bask in the bright lights of fame. Be the brand that everyone wants.
           Be desired. Be admired. Be possessed. We will do everything that’s
           required to put your brand in the limelight. And be made
