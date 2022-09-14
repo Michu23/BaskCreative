@@ -14,7 +14,6 @@ const WeAree = () => {
             <Row className="bottom-0">
               <Col md={1}></Col>
               <Col md={11}>
-                {/* <h1 className="botton-0">Hello</h1> */}
                 <img src={Whowe} alt="" className="img-fluid" />
               </Col>
             </Row>
@@ -36,7 +35,7 @@ const WeAree = () => {
                     <Container className="p-5 textgrey">
                       <Row>
                         <div className="my-4"
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
@@ -53,7 +52,7 @@ const WeAree = () => {
                           </p>
                         </div>
                         <div className="my-4"
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
@@ -70,7 +69,7 @@ const WeAree = () => {
                           </p>
                         </div>
                         <div className="my-4"
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
@@ -84,7 +83,7 @@ const WeAree = () => {
                           </p>
                         </div>
                         <div className="my-4"
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-delay="300"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out-cubic"
@@ -103,7 +102,6 @@ const WeAree = () => {
                     </Container>
                   </Col>
                 </Row>
-                {/* <img src={Are} alt="" className="w-50 img-fluid" /> */}
               </Col>
             </Row>
           </div>
