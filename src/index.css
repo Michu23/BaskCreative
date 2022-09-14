@@ -34,5 +34,13 @@ body{
   /* font-size: 500% !important; */
   width: fit-content !important;
   font-family: "gilroy-bold" !important;
+}
+
+
+.bigtitle2{
+  font-size: clamp(4rem, 7vw, 5rem) !important;
+  /* font-size: 500% !important; */
+  width: fit-content !important;
+  font-family: "gilroy-bold" !important;
   
 }

@@ -1,10 +1,18 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Pic from '../../Team/Nisal.jpg'
+import ProgressBar from "react-progressbar-on-scroll";
+import NavIcon from "../../NavIcon";
+
+import { Link } from 'react-router-dom';
 
 const Nisal = () => {
   return (
     <>
+     <ProgressBar color="#fee600" height={10} />
+      <Link to="/navs">
+        <NavIcon />
+      </Link>
     <Container fluid className=" m-0 p-0 bgy pt-5" 
     style={{
         PaddingTop: "200px",
@@ -46,7 +54,7 @@ const Nisal = () => {
                     <Col md={1}></Col>
                     <Col md={11}>
                         <Row>
-                            <Col md={4} className="d-flex justify-content-end pe-5">
+                            <Col md={4} className="d-flex justify-content-center">
                                 <img src={Pic} className="w-100 pb-5" />
                                 </Col>
                             <Col md={8}>

@@ -1,10 +1,18 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Pic from '../../Team/Sonica.jpg'
+import ProgressBar from "react-progressbar-on-scroll";
+import NavIcon from "../../NavIcon";
+
+import { Link } from 'react-router-dom';
 
 const Sonica = () => {
   return (
     <>
+     <ProgressBar color="#fee600" height={10} />
+      <Link to="/navs">
+        <NavIcon />
+      </Link>
     <Container fluid className=" m-0 p-0 bgy pt-5" 
     style={{
         PaddingTop: "200px",

@@ -50,15 +50,13 @@ const Contact = () => {
               <Col md={11}>
                 
 
-                <section>
-                  <div className="yy mb-5">
-                    <h1 className="display-1 mb-3">Contact us</h1>
-                  </div>
+                <div>
+                  
                   <div className="container ">
                     <Row>
                       <Col md={6}>
                         <Container fluid className="px-2">
-                          <h1 className="ww pb-2 display-6">
+                          <h1 className="yy pb-2 display-5">
                             Communicate with us!
                           </h1>
                           <form
@@ -108,7 +106,7 @@ const Contact = () => {
                           </form>
                         </Container>
                       </Col>
-                      <Col md={6} className="px-4">
+                      <Col md={6} className="px-4 mb-5 py-5">
                         <h1 className="ww pb-2 display-6">Bangalore</h1>
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15552.655758383615!2d77.6350955!3d12.9613594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01b32340b5de090!2sMNR%20PRIDE!5e0!3m2!1sen!2sin!4v1659097414987!5m2!1sen!2sin"
@@ -147,7 +145,7 @@ const Contact = () => {
                       </Col>
                     </Row>
                   </div>
-                </section>
+                </div>
               </Col>
             </Row>
           </div>

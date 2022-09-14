@@ -5,10 +5,10 @@ import Power from "./powering-brands.svg";
 
 const Powering = () => {
   return (
-    <section className="bgg">
-    <div>
+    <div className="bgg">
+    <div className="d-flex justify-content-center">
       <div
-        className="maincontent"
+        className="my-5 py-2"
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="2000"
@@ -108,7 +108,7 @@ const Powering = () => {
             </p>
           </Col>
         </Row> */}
-  </section>
+  </div>
   )
 }
 

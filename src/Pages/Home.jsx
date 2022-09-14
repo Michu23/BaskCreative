@@ -25,11 +25,13 @@ import Stategy from "./st.svg";
 import Works from "../Components/Works/Works";
 import HoverVideoPlayer from "react-hover-video-player";
 import ddd from "./whatwedo_edited.svg";
+import Www from "../Components/Works/www.svg";
 
 import stbg from "./stbg.svg";
 
 import peeps from "./dooo.svg";
 import Video from "../Components/Works/VegSeq.mp4";
+import Contact from "./Contact";
 
 
 Aos.init();
@@ -222,7 +224,7 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
-      <Container
+      {/* <Container
         fluid
         className="p-0 m-0 bgy stbg position-relative"
         style={{
@@ -290,9 +292,41 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </Container> */}
+      <Container fluid className=" m-0 p-0 bgg">
+       <Link to="/works">
+        <Container className="px-2 py-5 pe-3 cp">
+         <div>
+           <Row>
+             <Col md={1}></Col>
+             <Col md={11} className="position-relative hovs"
+             style={{
+              maxWidth: "1000px",
+            }}
+             >
+               <img src={Www} alt="" className="w-75 position-absolute " 
+               style={{zIndex : "888"}} />
+               
+               <div className="bnw">
+                  
+               <video src={Video} 
+               className="img-fluid bnw"
+               autoPlay
+               loop
+               muted
+               />
+               
+               </div>
+              
+             </Col>
+           </Row>
+         </div>
+       </Container>
+       </Link>
+      
+     </Container>
 
-      {/* <Works /> */}
+    
       <Container fluid className="p-0 m-0 bgg">
         <Container className="mx-2 pe-3 ">
           <div className="p-0 m-0 ">
@@ -305,7 +339,7 @@ const Home = () => {
 
                 {/* <Team /> */}
 
-                <section>
+                {/* <section>
                   <div className="yy mb-5">
                     <h1 className="display-1 mb-3">Contact us</h1>
                   </div>
@@ -402,12 +436,14 @@ const Home = () => {
                       </Col>
                     </Row>
                   </div>
-                </section>
+                </section> */}
+                  
               </Col>
             </Row>
           </div>
         </Container>
       </Container>
+      <Contact/>
     </>
   );
 };

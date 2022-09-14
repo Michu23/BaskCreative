@@ -26,7 +26,7 @@ const Nav = () => {
               <br />
               <div>
                 
-                  <p
+                  {/* <p
                     className="cp weare"
                     data-aos="fade-right"
                     data-aos-delay="100"
@@ -58,7 +58,7 @@ const Nav = () => {
                   >
                     What we do
                   </p>
-                </a>
+                </a> */}
 
                 <Link to="/works">
                   <p

@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Work from "./Ework.svg";
 import Img from "./1.jpeg";
 import HoverVideoPlayer from "react-hover-video-player";
 import Video from "./VegSeq.mp4";
 import Www from "./www.svg";
-import ProgressBar from "react-progressbar-on-scroll";
 import { Link } from "react-router-dom";
-import NavIcon from "../NavIcon";
 import Two from "./2.jpeg";
 import Three from "./3.jpeg";
 import Four from "./4.jpeg";
@@ -17,8 +15,18 @@ import L3 from "./L3.jpg";
 import Contact from "../../Pages/Contact";
 import Img2 from "./Img";
 
+import ProgressBar from "react-progressbar-on-scroll";
+import NavIcon from "../NavIcon";
+
+
+
 
 const Works = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     <ProgressBar color="#fee600" height={10} />

@@ -14,7 +14,7 @@ const Bask = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <img src={Logo2} className="logo" alt="" />
+        <img src={Logo2} className="logo mb-5" alt="" />
       </div>
       <div className="container px-2">
         <p
