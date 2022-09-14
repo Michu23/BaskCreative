@@ -23,7 +23,7 @@ const Img = (props) => {
       <img
         src={props.image}
         alt=""
-        className="img-fluid p-2"
+        className="img-fluid p-2 cp"
         onClick={handleClickOpen}
       />
       <Dialog

@@ -60,47 +60,41 @@ const Nav = () => {
                   </p>
                 </a>
 
-                {/* <a href="#work"> */}
                 <Link to="/works">
-                 
                   <p
                     className="cp work"
                     data-aos="fade-right"
                     data-aos-delay="500"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out-cubic"
-                    onClick={() => {
-                      navigate('/')
-                      setTimeout(() => {
-                          document.getElementById("work").scrollIntoView();
-                      },)  
-                  }}
+                  //   onClick={() => {
+                  //     navigate('/')
+                  //     setTimeout(() => {
+                  //         document.getElementById("work").scrollIntoView();
+                  //     },)  
+                  // }}
                   >
                     Our Works
                   </p>
                 </Link>
-                {/* </a> */}
-                {/* <a href="#work"> */}
 
                 <Link to="/people">
-                 
                   <p
-                    className="cp  peepz"
+                    className="cp peepz"
                     data-aos="fade-right"
                     data-aos-delay="500"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out-cubic"
-                    onClick={() => {
-                      navigate('/')
-                      setTimeout(() => {
-                          document.getElementById("work").scrollIntoView();
-                      },)  
-                  }}
+                  //   onClick={() => {
+                  //     navigate('/')
+                  //     setTimeout(() => {
+                  //         document.getElementById("work").scrollIntoView();
+                  //     },)  
+                  // }}
                   >
                     Our People
                   </p>
                 </Link>
-                {/* </a> */}
               </div>
             </div>
           </div>
