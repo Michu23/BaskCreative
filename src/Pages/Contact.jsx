@@ -48,10 +48,7 @@ const Contact = () => {
             <Row>
               <Col md={1}></Col>
               <Col md={11}>
-                
-
                 <div>
-                  
                   <div className="container ">
                     <Row>
                       <Col md={6}>

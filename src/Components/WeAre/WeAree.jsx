@@ -27,7 +27,7 @@ const WeAree = () => {
               <Col md={1}></Col>
               <Col md={11}>
                 <Row>
-                  <Col md={6}>
+                  <Col md={6} xs={6}>
                     <img src={Are} alt="" className="img-fluid" />
                   </Col>
                   <Col md={1}></Col>

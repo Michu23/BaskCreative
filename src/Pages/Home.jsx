@@ -26,9 +26,7 @@ import Works from "../Components/Works/Works";
 import HoverVideoPlayer from "react-hover-video-player";
 import ddd from "./whatwedo_edited.svg";
 import Www from "../Components/Works/www.svg";
-
 import stbg from "./stbg.svg";
-
 import peeps from "./dooo.svg";
 import Video from "../Components/Works/VegSeq.mp4";
 import Contact from "./Contact";
