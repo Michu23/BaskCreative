@@ -175,7 +175,7 @@ const Home = () => {
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="does p-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"

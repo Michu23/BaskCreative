@@ -74,7 +74,7 @@ const Nav = () => {
                   //     },)  
                   // }}
                   >
-                    Our Works
+                    Our Work
                   </p>
                 </Link>
 
