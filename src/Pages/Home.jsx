@@ -96,7 +96,6 @@ const Home = () => {
       <WeAree />
 
       <Container fluid className="p-0 m-0 bgg">
-
         <Container className="mx-2 pe-3 ">
           <Row>
             <Col md={1} className=""></Col>
@@ -112,112 +111,170 @@ const Home = () => {
                   >
                     <img src={peeps} alt="" className=" pb-5 img-fluid" />
                   </div>
-                  <Row className="">
+                  <Row className="my-5">
                     <Col md={1} className=""></Col>
                     <Col md={11}>
-                      <b>
+                      <>
                         <Row className=" ">
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Strategy
+                            <h1 className="does">Strategy</h1>
+                            <p className="desc ww pt-2">
+                              At Bask, we believe being creative begins with
+                              great strategy. Without great strategy, there’s no
+                              great creativity. You will see that every great
+                              campaign ever, every great brand that was ever
+                              created all flowed from insight -driven strategy.
+                              We help brands with strategic insights.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Creative
+                            <h1 className="does ww">Creative</h1>
+                            <p className="desc yy pt-2">
+                              We create advertising campaigns that unite a brand
+                              and give it a unique position in the minds of the
+                              consumer by providing emotional satisfaction and
+                              appeal through our work. We do brand campaigns in
+                              print, tv, radio, films and the digital medium.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Design
+                            <h1 className="does yy">Design</h1>
+                            <p className="desc ww pt-2">
+                              The face of every brand is its identity. We dress
+                              up brands with great logo design, graphics,
+                              packaging and experience design that tell the
+                              world the values they stand for.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Digital
+                            <h1 className="does ww">Digital</h1>
+                            <p className="desc yy pt-2">
+                              We do Websites, social media, Performance
+                              Marketing, App Design, SEO, Native Advertising and
+                              everything else digital.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Tech
+                            <h1 className="does yy">Tech</h1>
+                            <p className="desc ww pt-2">
+                              We develop apps and find tech solutions for brand
+                              marketing problems. And our tech team also dabbles
+                              in AI to find applications in marketing and
+                              branding.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does p-2"
+                            className=" p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Retail
+                            <h1 className="does ww">Marketing</h1>
+                            <p className="desc yy pt-2">
+                              All the best advertising campaigns may have only
+                              minimal effect if the brand’s marketing is flawed.
+                              Our marketing experts help iron out the flaws with
+                              appropriate marketing strategy and services. We
+                              offer brand and marketing audits and help
+                              establish fulfilment journeys.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Marketing
+                            <h1 className="does yy">Retail</h1>
+                            <p className="desc ww pt-2">
+                              The touch point of brands. We do retail audits and
+                              help design retail experiences that are unique to
+                              the brand. After all getting a lead to come to the
+                              store is not good enough, conversion is what we
+                              try to achieve through good retail design.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Brand Factory
+                            <h1 className="does ww">Production</h1>
+                            <p className="desc yy pt-2">
+                              From idea to execution our production team manages
+                              production of still shoots to films.
+                            </p>
                           </Col>
                           <Col
                             md={4}
                             xs={6}
-                            className="does  p-2"
+                            className="  p-2 px-4 my-2"
                             data-aos="fade-up"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out-cubic"
                           >
-                            Production
+                            <h1 className="does yy">Brand Factory</h1>
+                            <p className="desc ww pt-2">
+                              We also create our own brands. We come up with
+                              ideas, find the right partners and help them run
+                              it. We have few of them in the kiln. And if you
+                              are an investor and like to partner with us in
+                              creating your own brands, give us a call.
+                            </p>
                           </Col>
                         </Row>
-                      </b>
+                      </>
                     </Col>
                   </Row>
                 </div>
@@ -226,7 +283,7 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
-      
+
       <Container fluid className=" m-0 p-0 bgg">
         <Link to="/works">
           <Container className="px-2 py-5 pe-3 cp">
@@ -269,10 +326,7 @@ const Home = () => {
             <Row>
               <Col md={1}></Col>
               <Col md={11}>
-               
                 <Powering />
-
-              
               </Col>
             </Row>
           </div>
@@ -285,8 +339,8 @@ const Home = () => {
 
 export default Home;
 
-
-{/* <Container
+{
+  /* <Container
         fluid
         className="p-0 m-0 bgy stbg position-relative"
         style={{
@@ -354,4 +408,5 @@ export default Home;
             </Col>
           </Row>
         </Container>
-      </Container> */}
+      </Container> */
+}
