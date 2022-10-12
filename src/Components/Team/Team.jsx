@@ -180,7 +180,7 @@ const Team = () => {
                 you will find him to be a man of few words. "
               />
 
-              <Person
+              {/* <Person
                 img={Vishaka}
                 width="150"
                 name="Vishakha"
@@ -204,7 +204,7 @@ const Team = () => {
                 she somehow believes Bask is going to help open her third-eye.
                 We are not sure about that, but her designs are sure to open
                 your eyes. "
-              />
+              /> */}
             </Row>
           </Col>
         </Row>

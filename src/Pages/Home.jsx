@@ -4,10 +4,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ProgressBar from "react-progressbar-on-scroll";
 import { Row, Col, Container } from "react-bootstrap";
-
 import $ from "jquery";
 import axios from "axios";
-
 import Swal from "sweetalert2";
 import NavIcon from "../Components/NavIcon";
 import { Link } from "react-router-dom";
